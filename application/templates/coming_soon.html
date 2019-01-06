@@ -1,0 +1,341 @@
+<!-- get_header('Page Name','Title')-->
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>WASP </title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400%7CPoppins:200,400,500,600,700%7CPlayfair+Display:400,700i" rel="stylesheet">
+		<link rel="icon" type="image/png" href=""><!--favicon.co-->
+		<!-- Place favicon.ico in the root directory -->
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <meta name="google-signin-client_id" content="115190952528-rphtltdisor88ocd73094g0v1gpbi4kl.apps.googleusercontent.com">
+		<!-- Icon foont list -->
+		<link rel="stylesheet" href="{{url_for('static', filename='css/iconfont.css') }}">
+		<link rel="stylesheet" href="{{url_for('static', filename='css/font-awesome.min.css') }}">
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css') }}">
+		<!-- isotope -->
+		<link rel="stylesheet" href="{{url_for('static', filename='css/isotope.css') }}">
+
+		<!-- magnific -->
+		<link rel="stylesheet" href="{{url_for('static', filename='css/magnific-popup.css') }}">
+
+		<!-- owl carousel -->
+		<link rel="stylesheet" href="{{url_for('static', filename='css/owl.carousel.min.css') }}">
+		<link rel="stylesheet" href="{{url_for('static', filename='css/owl.theme.default.min.css') }}">
+
+		<!-- woocommerce -->
+		<link rel="stylesheet" href="{{url_for('static', filename='css/woocommerce.css') }}">
+
+		<!--For Plugins external css-->
+		<link rel="stylesheet" href="{{url_for('static', filename='css/plugins.css') }}">
+
+
+		<!--Theme custom css -->
+		<link rel="stylesheet" href="{{url_for('static', filename='css/style.css') }}">
+
+		<!--Theme Responsive css-->
+		<link rel="stylesheet" href="{{url_for('static', filename='css/responsive.css') }}">
+
+		<script type="text/javascript" src="{{url_for('static', filename='js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') }}"></script>
+
+	</head>
+	<body class="woocommerce">
+		<!--[if lt IE 10]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		
+		<div id="preloader">
+			<div class="spinner">
+				<div class="double-bounce1"></div>
+				<div class="double-bounce2"></div>
+			</div>
+		</div><!-- #preloader -->
+<!-- home section -->
+<!-- header version inner menu -->
+<header class="xs-header-height xs-menu-style-transparent xs-menu-style-border fundpress-header-main-version color-navy-blue v3">
+	<div class="container">
+		<nav class="xs-menus fundpress-menu">
+			<div class="nav-header">
+				<div class="nav-toggle"></div>
+				<a class="nav-brand nav-logo" href="index.html">
+					<img src="{{ url_for('static', filename='images/logo_1.svg') }}" alt="">
+				</a>
+			</div><!-- . END -->
+			<div class="nav-menus-wrapper">
+				<div class="xs-logo-wraper">
+					<a class="nav-brand xs-logo " href="{{ url_for('authentication.coming_soon_page') }}">
+						<img src="{{ url_for('static', filename='images/logo_1.svg') }}" alt="">
+					</a>
+				</div>
+				<ul class="nav-menu">
+					<li><a href="">Home</a>
+						<ul class="nav-dropdown">
+							<li><a href="index.html">home version 1</a></li>
+						</ul>
+					</li>
+					<li><a href="{{ url_for('about_us.about')}}">about</a></li>
+					<li><a href="#">contact</a></li>
+				</ul>
+                <div class="xs-navs-button" disabled>
+					<ul class="xm-icon-with-text fundpress-icon-menu">
+						<li style="opacity:0.5;" ><a style="opacity:0.5;" href="" ><i style="opacity:0.5;" class="fa fa-unlock-alt color-green"></i>Log In<br >SignUp</a></li>
+				</div>
+			</div><!-- .nav-menus-wrapper END -->
+		</nav><!-- .xs-menus .fundpress-menu END -->
+	</div>
+</header>
+
+<!-- header version inner menu closed -->
+
+<!-- welcome section -->
+<!--<section class="xs-screen-height xs-welcome-section xm-bg fundpress-welcome-section">
+	<div class="xs-banner-slider owl-carousel">
+
+	</div>
+</section><!-- End welcome section -->
+		<div id="coming_soon"class="xs-banner-slider-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url({{ url_for('static', filename='images/bg_6.jpg') }}); position:relative; height:-100%; overflow: hidden; background-size: cover;background-repeat: no-repeat;">
+			<div class="container" >
+				<div class="row ">
+					<div class="col-lg-12 center-block">
+						<div class="xs-welcome-content version-3">
+							<div class="xs-welcome-wraper ">
+								<div class="mt-5"></div>
+								<h2 style="text-align:center;">Investing should not be expensive, subscribe now!</h2>
+								<p style="text-align:center; color:white;">WASP is a platform that lowers the entry barrier of high return-investment through crowdfunding.</p>
+								<p style="text-align:center; color:white;">RM200 OR RM1000, every single amount is able to fit into our high-entry funds.</p>
+								<h3 style="text-align:center; color:white;">Coming in </h3>
+								<div class="fundpress-event-details text-center">
+								<div style="text-align:center; color:blue; font-size:20px; font-weight:bold;"class=" countdown-container xs-countdown-timer" data-countdown="2019/01/20"></div>
+									</div>
+								<div class="mt-5"></div>
+								<h4 style="text-align:center; color:white;">SUBSCRIBE TO OUR NEWSLETTER</h4>
+								<form method="POST" id="subscribe-form">
+								<div class="xs-input-group-v2">
+                    				<input type="email" name="email" id="the_email_sub" class=" col-lg-4 xs-input-control" placeholder="Your Email" required>
+								</div>
+								<div class="xs-submit-wraper xs-mb-20">
+									<div id="successnewsletterAlert" class="alert alert-success" role="alert"style="display:none;"></div>
+									<input type="submit" name="submit" id="subscribed" class="xs-btn round-btn green-btn">
+								</div>
+									</form>
+							</div><!-- .xs-welcome-wraper END -->
+						</div><!-- .xs-welcome-content END -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!-- square service -->
+<section  class="xs-navy-blue-bg fundpress-square-service-section v3">
+	<div class="container">
+		<div class="fundpress-section-heading fundpress-heading-title fundpress-heading-title-v2 content-left">
+			<h2 class="color-white">Learning on investment? WASP makes it easier. </h2>
+		</div><!-- .xs-heading-title .fundpress-heading-title-v2 .fundpress-heading-title END -->
+		<div class="row">
+			<div class="col-md-6 col-sm-12 col-lg-3">
+				<div class="fundpress-icon-with-square-service">
+					<img src="{{ url_for('static', filename='images/icon-1.png') }}" alt="">
+					<a href="#" class="color-white">Low Entry Barrier. </a>
+					<p>Start investing in minutes. No minimum requirements, plenty of choices.  </p>
+				</div><!-- .fundpress-icon-with-square-service END -->
+			</div>
+			<div class="col-md-6 col-sm-12 col-lg-3">
+				<div class="fundpress-icon-with-square-service">
+					<img src="{{ url_for('static', filename='images/icon-2.png') }}" alt="">
+					<a href="#" class="color-white">Low Entry Fees.</a>
+					<p>Join the millions on the investment of WASP curated products.</p>
+				</div><!-- .fundpress-icon-with-square-service END -->
+			</div>
+			<div class="col-md-6 col-sm-12 col-lg-3">
+				<div class="fundpress-icon-with-square-service">
+					<img src="{{ url_for('static', filename='images/icon-3.png') }}" alt="">
+					<a href="#" class="color-white">Expert Advice, 24/7.</a>
+					<p>Our team will answer your questions in 5 minutes, day or night.</p>
+				</div><!-- .fundpress-icon-with-square-service END -->
+			</div>
+			<div class="col-md-6 col-sm-12 col-lg-3">
+				<div class="fundpress-icon-with-square-service">
+					<img src="{{ url_for('static', filename='images/icon-4.png') }}" alt="">
+					<a href="#" class="color-white">Safety. Guaranteed.</a>
+					<p>WASP Guarantee protects your money and guarding it. </p>
+				</div><!-- .fundpress-icon-with-square-service END -->
+			</div>
+		</div>
+	</div>
+	<div class="xs-shape-background">
+		<div class="xs-waves">
+			<div class="xs-wave xs-wave_1"> </div>
+			<div class="xs-wave xs-wave_2"> </div>
+			<div class="xs-wave xs-wave_3"> </div>
+			<div class="xs-wave xs-wave_4"> </div>
+			<div class="xs-wave xs-wave_5"> </div>
+		</div>
+	</div>
+</section><!-- End square service -->
+<!-- event section -->
+<section class="xs-bg fundpress-event-section xs-section-padding v3" style="">
+	<div class="container">
+		<div class="xs-section-heading row xs-margin-0">
+			<div class="fundpress-heading-title xs-padding-0 col-md-9 col-xl-9">
+				<h2 class="color-navy-blue">Upcoming Products</h2>
+				<span class="xs-separetor dashed-separetor fundpress-separetor"></span>
+				<p>This allows retail investor to make investment into accredited investor products while maintaing a very low cost.</p>
+			</div><!-- .xs-heading-title .fundpress-heading-title .xs-col-9 END -->
+			<!--<div class="xs-btn-wraper xs-padding-0 col-md-3 col-xl-3 d-flex-center-end">
+				<a href="events.html" class="xs-btn round-btn navy-blue-btn">Events</a>
+			</div><!-- .xs-btn-wraper .d-flex-center-end .xs-col-3 END -->
+		</div><!-- .xs-section-heading .fundpress-section-heading .xs-spilit-container END -->
+		<div class="fundpress-event-wraper">
+			<div class="fundpress-single-event-wraper row">
+				<div class="col-md-3">
+					<div class="fundpress-event-image">
+						<img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/bonds.jpg" alt="">
+					</div>
+				</div>
+				<div class="col-md-6 fundpress-event-details">
+					<h3 class="color-white xs-post-title fundpress-post-title">Financial BONDS.</h3>
+					<p>Accredited Investor and Cooperate Bonds are expensive, utilizing crowdfunding, we can enjoy the benefit of an accredited investor investment, while not having to fork out so much.</p>
+					<div class="countdown-container xs-countdown-timer" data-countdown="2019/01/20"></div>
+				</div>
+				<div class="col-md-3">
+					<div class="fundpress-btn-wraper">
+						<a href="#" class="xs-btn round-btn green-btn">subscribe</a>
+					</div>
+				</div>
+			</div><!-- .fundpress-single-event-wraper END -->
+			<div class="fundpress-single-event-wraper row">
+				<div class="col-md-3">
+					<div class="fundpress-event-image">
+						<img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/etf.png" alt="">
+					</div>
+				</div>
+				<div class="col-md-6 fundpress-event-details">
+					<h3 class="color-white xs-post-title fundpress-post-title">Curated ETFs</h3>
+					<p>ETFs has long been a pool of stocks/bonds that was carefully selected by a team of expert,
+						but what if our expertise select a pool of ETFs and you as an investor get to pick base on your
+						interest of the future technology such as TechFUND, BankETF, GreenEnergyETFs.</p>
+					<div class="countdown-container xs-countdown-timer" data-countdown="2019/01/20"></div>
+				</div>
+				<div class="col-md-3">
+					<div class="fundpress-btn-wraper">
+						<a href="#" class="xs-btn round-btn green-btn">subscribe</a>
+					</div>
+				</div>
+			</div><!-- .fundpress-single-event-wraper END -->
+		</div>
+	</div>
+</section><!-- End event section -->
+
+<!-- sponsor section -->
+<section class="xs-gray-bg xs-bg xs-section-padding fundpress-sponsor-section" style="">
+	<div class="xs-solid-overlay xs-bg-white"></div>
+	<div class="container fundpress-partners-wraper">
+		<div class="fundpress-heading-title">
+			<h2 class="color-navy-blue xs-mb-0">Featured Unique ETFs from Prominent Industry Leader apart from ours.</h2>
+		</div><!-- .xs-heading-title .fundpress-heading-title END -->
+		<div class="content-center">
+			<ul class="fundpress-partners">
+				<li><a href="#" class="full-round fundpress-single-partner"><img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/vanguard.png" alt=""></a></li>
+
+				<li><a href="#" class="full-round fundpress-single-partner"><img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/fidelity.png" alt=""></a></li>
+			</ul><!-- .fundpress-partners END -->
+		</div>
+		<div class="content-center">
+			<ul class="fundpress-partners">
+				<li><a href="#" class="full-round fundpress-single-partner"><img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/reliance.jpg" alt=""></a></li>
+				<li><a href="#" class="full-round fundpress-single-partner"><img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/ishares.jpg" alt=""></a></li>
+				<li><a href="#" class="full-round fundpress-single-partner"><img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/spdr.png" alt=""></a></li>
+			</ul><!-- .fundpress-partners END -->
+		</div>
+	</div>
+</section><!-- End sponsor section -->
+		<footer class="xs-footer-section fundpress-footer-section v3">
+			<div class="fundpress-footer-top-layer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5">
+							<div class="fundpress-single-footer">
+								<div class="xs-footer-logo">
+									<a href="">
+										<img src="" alt="">
+									</a>
+								</div>
+								<div class="fundpress-footer-content">
+									<p>WASP is an investment platform that lowers the threshold for high-entrance barrier investment.</p>
+								</div><!-- . END -->
+								<ul class="xs-social-list fundpress-social-list">
+									<li><a href="" class="color-facebook full-round"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="" class="color-twitter full-round"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="" class="color-dribbble full-round"><i class="fa fa-dribbble"></i></a></li>
+									<li><a href="" class="color-pinterest full-round"><i class="fa fa-pinterest"></i></a></li>
+									<li><a href="" class="color-instagram full-round"><i class="fa fa-instagram"></i></a></li>
+								</ul><!-- .xs-social-list .fundpress-social-list END -->
+							</div><!-- .fundpress-single-footer END -->
+						</div>
+						<div class="col-md-2">
+							<div class="fundpress-single-footer">
+								<div class="xs-footer-title">
+									<h4 class="color-white">About</h4>
+								</div><!-- .xs-footer-title END -->
+								<nav class="xs-footer-menu">
+									<ul>
+										<li><a href="about.html">About Us</a></li>
+										<li><a href="#">How It Works</a></li>
+										<li><a href="#">Careers</a></li>
+										<li><a href="#">Press</a></li>
+										<li><a href="news-feed.html">Blog</a></li>
+										<li><a href="contact.html">Contact</a></li>
+									</ul>
+								</nav><!-- .xs-footer-menu .xs-block-menu END -->
+							</div><!-- .fundpress-single-footer END -->
+						</div>
+						<div class="col-md-2">
+							<div class="fundpress-single-footer">
+								<div class="xs-footer-title">
+									<h4 class="color-white">Help</h4>
+								</div><!-- .xs-footer-title END -->
+								<nav class="xs-footer-menu">
+									<ul>
+										<li><a href="faq.html">FAQ</a></li>
+										<li><a href="#">Our Rules</a></li>
+										<li><a href="#">Trust & Safety</a></li>
+										<li><a href="#">Support</a></li>
+										<li><a href="#">Terms of Use</a></li>
+										<li><a href="#">Privacy Policy</a></li>
+									</ul>
+								</nav><!-- .xs-footer-menu .xs-block-menu END -->
+							</div><!-- .fundpress-single-footer END -->
+						</div>
+					</div>
+				</div>
+			</div><!-- .xs-footer-wraper .fundpress-footer-top-layer END -->
+		</footer>
+<!-- Authentication/Login/SignUp -->
+		<script type="text/javascript" src="{{url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/js/bootstrap-formhelpers.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+		<script type="text/javascript" src="{{url_for('static',filename='js/functions/form.js') }}"></script>
+        <script type="text/javascript" src="{{url_for('static',filename='js/functions/facebook_login.js') }}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/plugins.js') }}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/Popper.js') }}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/bootstrap.min.js') }}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/isotope.pkgd.min.js') }}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/jquery.easing.1.3.js') }}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/jquery.countdown.min.js') }}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/parallax.min.js') }}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/jquery.easypiechart.min.js') }}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/spectragram.min.js') }}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/jquery.waypoints.min.js') }}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/scrollax.js') }}"></script>
+        <script type="text/javascript" src="{{url_for('static', filename='js/functions/load_campaign.js') }}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/main.js') }}"></script>
+
+	</body>
+</html>

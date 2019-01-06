@@ -1,0 +1,762 @@
+<!-- get_header('Page Name','Title')-->
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>WASP </title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400%7CPoppins:200,400,500,600,700%7CPlayfair+Display:400,700i" rel="stylesheet">
+		<link rel="icon" type="image/png" href="favicon.ico">
+		<!-- Place favicon.ico in the root directory -->
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <meta name="google-signin-client_id" content="115190952528-rphtltdisor88ocd73094g0v1gpbi4kl.apps.googleusercontent.com">
+		<!-- Icon foont list -->
+		<link rel="stylesheet" href="{{url_for('static', filename='css/iconfont.css') }}">
+		<link rel="stylesheet" href="{{url_for('static', filename='css/font-awesome.min.css') }}">
+<!--
+		<link rel="stylesheet" href="assets/css/iconfont.css">
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+-->
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css') }}">
+		<!--<link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+		<!-- isotope -->
+		<link rel="stylesheet" href="{{url_for('static', filename='css/isotope.css') }}">
+		<!--<link rel="stylesheet" href="assets/css/isotope.css">-->
+		<!-- magnific -->
+		<link rel="stylesheet" href="{{url_for('static', filename='css/magnific-popup.css') }}">
+		<!--<link rel="stylesheet" href="assets/css/magnific-popup.css"> -->
+		<!-- owl carousel -->
+		<link rel="stylesheet" href="{{url_for('static', filename='css/owl.carousel.min.css') }}">
+		<link rel="stylesheet" href="{{url_for('static', filename='css/owl.theme.default.min.css') }}">
+		<!--<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">-->
+		<!-- woocommerce -->
+		<link rel="stylesheet" href="{{url_for('static', filename='css/woocommerce.css') }}">
+		<!--<link rel="stylesheet" href="assets/css/woocommerce.css">-->
+
+
+		<!--For Plugins external css-->
+		<link rel="stylesheet" href="{{url_for('static', filename='css/plugins.css') }}">
+		<!--<link rel="stylesheet" href="assets/css/plugins.css" />-->
+
+		<!--Theme custom css -->
+		<link rel="stylesheet" href="{{url_for('static', filename='css/style.css') }}">
+		<!--<link rel="stylesheet" href="assets/css/style.css">-->
+
+		<!--Theme Responsive css-->
+		<link rel="stylesheet" href="{{url_for('static', filename='css/responsive.css') }}">
+		<!--<link rel="stylesheet" href="assets/css/responsive.css" />-->
+
+		<script type="text/javascript" src="{{url_for('static', filename='js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') }}"></script>
+		<!--<script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>-->
+
+	</head>
+	<body class="woocommerce">
+		<!--[if lt IE 10]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		
+		<div id="preloader">
+			<div class="spinner">
+				<div class="double-bounce1"></div>
+				<div class="double-bounce2"></div>
+			</div>
+		</div><!-- #preloader -->
+<!-- home section -->
+<!-- header version inner menu -->
+<header class="xs-header-height xs-menu-style-transparent xs-menu-style-border fundpress-header-main-version color-navy-blue v3">
+	<div class="container">
+		<nav class="xs-menus fundpress-menu">
+			<div class="nav-header">
+				<div class="nav-toggle"></div>
+				<a class="nav-brand nav-logo" href="index.html">
+					<img src="{{ url_for('static', filename='images/logo_1.svg') }}" alt="">
+				</a>
+			</div><!-- . END -->
+			<div class="nav-menus-wrapper">
+				<div class="xs-logo-wraper">
+					<a class="nav-brand xs-logo " href="{{ url_for('authentication.homepage') }}">
+						<img src="{{ url_for('static', filename='images/logo_1.svg') }}" alt="">
+					</a>
+				</div>
+				<ul class="nav-menu">
+					<li><a href="">Home</a>
+						<ul class="nav-dropdown">
+							<li><a href="index.html">home version 1</a></li>
+						</ul>
+					</li>
+					<li><a href="{{ url_for('about_us.about')}}">about</a></li>
+					<!--
+					<li><a href="#">Blog</a>
+						<ul class="nav-dropdown">
+							<li><a href="news-feed.html ">blog version 1</a></li>
+							<li><a href="news-feed-v2.html ">blog version 2</a></li>
+							<li><a href="news-feed-v3.html">blog version 3</a></li>
+							<li><a href="blog-single.html">blog details </a></li>
+						</ul>
+					</li>-->
+					<li><a href="#">contact</a></li>
+                    <!--
+					<li><a href="#">pages</a>
+						<ul class="nav-dropdown">
+							<li><a href="team-member-details.html ">team details</a></li>
+							<li><a href="progress.html ">progress</a></li>
+							<li><a href="progress-successful.html">progress successful</a></li>
+							<li><a href="progress-explore.html">progress explore</a></li>
+							<li><a href="events.html">events</a></li>
+							<li><a href="faq.html">faq</a></li>
+							<li><a href="product_detail.html ">fund-details</a></li>
+							<li><a href="we-do.html">we do</a></li>
+							<li><a href="portfolio.html">portfolio</a></li>
+							<li><a href="shop.html">Shop</a></li>
+							<li><a href="single-shop.html">single Shop</a></li>
+						</ul>
+					</li>-->
+				</ul>
+                {% if current_user.is_authenticated %}
+                <div class="xs-navs-button">
+                    <a class="xs-btn round-btn green-btn" href="{{ url_for('authentication.login_facebook') }}">My Dashboard</a>
+                </div>
+                {% else %}
+                <div class="xs-navs-button">
+					<ul class="xm-icon-with-text fundpress-icon-menu">
+						<li><a href="" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fa fa-unlock-alt color-green"></i>Log In<br>SignUp</a></li>
+						<!--<li class="d-block d-lg-none d-xl-block"><a href="#" class="xs-btn round-btn green-btn">start a campaign</a></li>-->
+					<li > {% with messages = get_flashed_messages() %}
+                            {% if messages %}
+                                {% for message in messages%}
+                        <font color="red">{{ message }}</font>
+                                {% endfor %}
+                            {% endif %}
+                        {% endwith %}</li>
+                    </ul>
+				</div>
+                {% endif %}
+
+			</div><!-- .nav-menus-wrapper END -->
+		</nav><!-- .xs-menus .fundpress-menu END -->
+	</div>
+</header>
+
+<!-- header version inner menu closed -->
+
+<!-- modal -->
+<div class="modal xs-modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="fundpress-tab-nav-v5">
+				<ul class="nav nav-tabs" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" href="#login" role="tab" data-toggle="tab">
+							Login
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#signup" role="tab" data-toggle="tab">
+							Signup
+						</a>
+					</li>
+				</ul>
+			</div><!-- fundpress-tab-nav-v3 -->
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane fadeInRights show fade in active" id="login">
+					<form method="POST" id="xs-login-form">
+						<div class="xs-input-group-v2">
+							<i class="icon icon-profile-male"></i>
+							<input type="text" name="name" id="xs_user_login_name" class="xs-input-control" placeholder="Enter your email">
+						</div>
+						<div class="xs-input-group-v2">
+							<i class="icon icon-key2"></i>
+							<input type="password" name="name" id="xs_login_password" class="xs-input-control" placeholder="Enter your password">
+						</div>
+						<div class="xs-submit-wraper xs-mb-20">
+							<div id="errorAlert" class="alert alert-danger" role="alert" style="display:none;"></div>
+							<div id="successAlert" class="alert alert-success" role="alert"style="display:none;"></div>
+							<input type="submit" name="submit" value="login now" id="xs_contact_get_action" class="btn btn-warning btn-block">
+						</div>
+                        </form>
+						<p class="xs-mb-20">or</p>
+                    <div class="xs-submit-wraper">
+                            <button class="btn btn-default btn-block" id="xs_google" onClick="login_google()">
+                                Sign In with Google
+                            </button>
+                        </div>
+                    <div class="xs-submit-wraper xs-mb-20">
+							<button onClick="login_fb()" name="submit" value="Login with facebook account" id="xs_facebook" class="btn btn-info btn-block">
+                            Sign In with Facebook</button>
+                    </div>
+			 		<a href="{{ url_for('authentication.forgot_password')}}">Forgot Username/Password?</a><br>
+
+				</div><!-- tab-pane -->
+				<div role="tabpanel" class="tab-pane fadeInRights fade" id="signup">
+					<form action="#" method="POST" id="xs-register-form" >
+						<legend>Personal Information </legend>
+						<div class="xs-input-group-v2">
+							<i class="icon icon-profile-male"></i>
+							<input type="text" name="name" id="xs_register_name" class="xs-input-control" placeholder="Enter your name" required>
+						</div>
+						<div class="xs-input-group-v2">
+							<i class="icon icon-envelope2"></i>
+							<input type="email" name="email" id="xs_register_email" data-toggle="tooltip"data-placement="right" title="This is required as it will your log-in username" class="xs-input-control" placeholder="Enter your email" required>
+						</div>
+						<div class="xs-input-group-v2">
+							<i class="icon icon-key2"></i>
+							<input  data-html='true'data-toggle="tooltip" type="password" data-placement="right" title="Passwords must contain:<br>-(8) characters in length <br>- An Uppercase letter (A-Z)<br> - A Number (0-9)<br> - A Special character (*&^%)"	name="name" id="xs_register_password" class="xs-input-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Enter your password" >
+						</div>
+						<div class="xs-input-group-v2">
+							<i class="icon icon-key2"></i>
+							<input type="password" data-match="#xs_register_password"data-match-error="Whoops, these don't match" name="name" id="xs_register_repeat_pass" class="xs-input-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Enter your confirm password">
+						</div>
+						<p id="validate-status"></p>
+
+						<legend>Date of Birth</legend>
+                        <div class="xs-input-group-v2">
+							<input data-toggle="tooltip"data-placement="right" title="You have to be above the age of 18 to register" type="text" name="dob" placeholder="DD/MM/YYYY" id="dob" maxlength="10" class="xs-input-control validate" required/>
+                        </div>
+						<p id="age-status"></p>
+						<!-- Address Details -->
+						<legend>Country Details</legend>
+						<label class="color-navy-blue"for="register_countries_states">Select Your Country*</label>
+						<select id="register_countries_states" class="form-control bfh-countries" data-country="US" required></select>
+
+						<!--<label class="color-navy-blue" for="register_state_selector">States*</label>
+						<select id="register_state_selector"class="form-control bfh-states" data-country="register_countries_states" required></select>-->
+						<!-- Phone Number Details -->
+						<label class="color-navy-blue" for="register_phone_number">Phone No* (Verification Purposes)</label>
+						<input data-toggle="tooltip" data-placement="right" title="Phone number is required for verification of acocunt purposes" id="register_phone_number"type="text" class="form-control bfh-phone" data-country="register_countries_states" required>
+						<br>
+						<div class="xs-submit-wraper xs-mb-20">
+							<div id="errorRegisterAlert" class="alert alert-danger" role="alert" style="display:none;"></div>
+							<div id="successRegisterAlert" class="alert alert-success" role="alert"style="display:none;"></div>
+							<input type="submit" name="submit" value="Register now" id="xs_register_get_action" class="btn btn-warning btn-block">
+						</div>
+					</form>
+				</div><!-- tab-pane -->
+			</div><!-- tab-content -->
+		</div>
+	</div>
+</div><!-- End modal --><!-- End home section -->
+
+
+<!-- welcome section -->
+<section class="xs-screen-height xs-welcome-section xm-bg fundpress-welcome-section">
+	<div class="xs-banner-slider owl-carousel">
+        {% for product in products %}
+		<div id="banner_{{ product['product_id'] }}"class="xs-banner-slider-item" style="background-image: url(assets/images/welcome-bg-3.png);">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="xs-welcome-content version-3">
+							<div class="xs-welcome-wraper">
+								<h2>{{ product['product_name'] }}</h2>
+								<div class="xs-skill-bar-v2" data-percent="{{ product['p_percentage_funded'] }}%">
+									<div class="xs-skill-track">
+										<p><span class="number-percentage-count">{{ product['p_percentage_funded'] }}</span>%</p>
+									</div>
+								</div>
+								<ul class="fundpress-welcome-list-content list-inline">
+									<li>${{ "{:,.0f}".format(product['product_current_amount']) }}<span class="d-block">Invested</span></li>
+									<li>${{ "{:,.0f}".format(product['product_fund_required']) }}<span class="d-block">Goal</span></li>
+									<li>119<span class="d-block">Backers</span></li>
+								</ul>
+								<div class="xs-btn-wraper">
+									<a id="{{ product['product_id'] }}" class="view-more xs-btn navy-blue-btn round-btn">see campaign</a>
+								</div>
+							</div><!-- .xs-welcome-wraper END -->
+						</div><!-- .xs-welcome-content END -->
+					</div>
+					<div class="col-lg-6" >
+						<div class="xs-welcome-content">
+							<div class="xs-welcome-wraper">
+								<img src="assets/images/slider_3_1.png" alt="">
+							</div><!-- .xs-welcome-wraper END -->
+						</div><!-- .xs-welcome-content END -->
+					</div>
+				</div>
+			</div>
+		</div>
+        {% endfor %}
+	</div>
+</section><!-- End welcome section -->
+<!--
+<!-- side by side product ->
+<section class="xs-full-width-section fundpress-full-width-section">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 col-lg-6 xs-padding-0">
+				<div class="fundpress-full-width-wraper-v2" style="background-image: url(assets/images/back_other_bg.jpg)">
+					<div class="fundpress-product-hover-content-v2">
+						<div class="fundpress-sub-title">
+							<h2>Back Others</h2>
+						</div>
+						<div class="fundpress-product-text-content">
+							<p>We recently we discovered a major problem –  organizing accessories for these Apple devices while on the road or in our workspace was a major.</p>
+						</div>
+						<div class="xs-btn-wrapre">
+							<a href="#" class="xs-btn btn xs-box-shadow btn-primary btn-lg round-btn">create a project</a>
+						</div>
+					</div><!-- .fundpress-product-hover-content-v2 END ->
+					<div class="xs-solid-overlay xs-bg-black"></div>
+				</div><!-- .fundpress-full-width-wraper-v2 END ->
+			</div>
+			<div class="col-md-12 col-lg-6 xs-padding-0">
+				<div class="fundpress-full-width-wraper-v2" style="background-image: url(assets/images/get_funded_bg.jpg)">
+					<div class="fundpress-product-hover-content-v2">
+						<div class="fundpress-sub-title">
+							<h2>Get Funded</h2>
+						</div>
+						<div class="fundpress-product-text-content">
+							<p>We recently we discovered a major problem –  organizing accessories for these Apple devices while on the road or in our workspace was a major.</p>
+						</div>
+						<div class="xs-btn-wrapre">
+							<a href="#" class="xs-btn xs-box-shadow btn btn-primary btn-lg round-btn">create a project</a>
+						</div>
+					</div><!-- .fundpress-product-hover-content-v2 END ->
+					<div class="xs-solid-overlay xs-bg-black"></div>
+				</div><!-- .fundpress-full-width-wraper-v2 END ->
+			</div>
+		</div>
+	</div>
+</section><!-- End side by side product ->
+-->
+        <!-- square service -->
+<section  class="xs-navy-blue-bg fundpress-square-service-section v3">
+	<div class="container">
+		<div class="fundpress-section-heading fundpress-heading-title fundpress-heading-title-v2 content-left">
+			<h2 class="color-white">Learning on investment? WASP makes it easier. </h2>
+		</div><!-- .xs-heading-title .fundpress-heading-title-v2 .fundpress-heading-title END -->
+		<div class="row">
+			<div class="col-md-6 col-sm-12 col-lg-3">
+				<div class="fundpress-icon-with-square-service">
+					<img src="{{ url_for('static', filename='images/icon-1.png') }}" alt="">
+					<a href="#" class="color-white">Low Entry Barrier. </a>
+					<p>Start investing in minutes. No minimum requirements, plenty of choices.  </p>
+				</div><!-- .fundpress-icon-with-square-service END -->
+			</div>
+			<div class="col-md-6 col-sm-12 col-lg-3">
+				<div class="fundpress-icon-with-square-service">
+					<img src="{{ url_for('static', filename='images/icon-2.png') }}" alt="">
+					<a href="#" class="color-white">Low Entry Fees.</a>
+					<p>Join the millions on the investment of WASP curated products.</p>
+				</div><!-- .fundpress-icon-with-square-service END -->
+			</div>
+			<div class="col-md-6 col-sm-12 col-lg-3">
+				<div class="fundpress-icon-with-square-service">
+					<img src="{{ url_for('static', filename='images/icon-3.png') }}" alt="">
+					<a href="#" class="color-white">Expert Advice, 24/7.</a>
+					<p>Our team will answer your questions in 5 minutes, day or night.</p>
+				</div><!-- .fundpress-icon-with-square-service END -->
+			</div>
+			<div class="col-md-6 col-sm-12 col-lg-3">
+				<div class="fundpress-icon-with-square-service">
+					<img src="{{ url_for('static', filename='images/icon-4.png') }}" alt="">
+					<a href="#" class="color-white">Safety. Guaranteed.</a>
+					<p>WASP Guarantee protects your money and guarding it. </p>
+				</div><!-- .fundpress-icon-with-square-service END -->
+			</div>
+		</div>
+	</div>
+	<div class="xs-shape-background">
+		<div class="xs-waves">
+			<div class="xs-wave xs-wave_1"></div>
+			<div class="xs-wave xs-wave_2"></div>
+			<div class="xs-wave xs-wave_3"></div>
+			<div class="xs-wave xs-wave_4"></div>
+			<div class="xs-wave xs-wave_5"></div>
+		</div>
+	</div>
+</section><!-- End square service -->
+
+<!-- cause matters -->
+<section id="cause-matters" class="waypoint-tigger xs-gray-bg xs-section-padding v3">
+	<div class="container">
+		<div class="xs-section-heading row xs-margin-0">
+			<div class="fundpress-heading-title xs-padding-0 col-md-9 col-xl-9">
+				<h2 class="color-navy-blue">Big or small your cause matters</h2>
+				<span class="xs-separetor dashed-separetor fundpress-separetor"></span>
+			</div><!-- .fundpress-heading-title .xs-col-9 END -->
+			<div class="xs-btn-wraper xs-padding-0 col-xl-3 col-md-3 d-flex-center-end">
+				<a href="progress.html" class="xs-btn round-btn navy-blue-btn">All Projects</a>
+			</div><!-- .xs-btn-wraper .xs-col-3 .d-flex-center-end END -->
+		</div><!-- .xs-section-heading .fundpress-section-heading .xs-spilit-container END -->
+		<div class="xs-tab-wraper fundpress-tab-wraper">
+			<div class="fundpress-tab-nav xs-tab-nav">
+				<ul class="nav nav-tabs" role="tablist">
+                    {% for list,prod in products|groupby('categories') %}
+					<li class="nav-item">
+						<a class="nav-link {% if loop.index == 1 %}active{% endif %}" href="#{{list}}" role="tab" data-toggle="tab">{{ list }}</a>
+					</li>
+                     {% endfor %}
+				</ul>
+			</div><!-- .xs-isotope-nav .fundpress-isotope-nav END -->
+			<div class="tab-content">
+                 {% for list,p in products|groupby('categories') %}
+				<div role="tabpanel" class="tab-pane fade in show {% if loop.index == 1 %}active{% endif %}" id="{{ list }}">
+					<div class="row">
+                         {% for product in p %}
+						<div class="col-lg-4" id="tab_{{ product['product_id'] }}">
+							<div class="fundpress-grid-item-content">
+								<div class="fundpress-item-header xs-mb-20">
+									<img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/{{ product['product_id']}}_img.jpg" alt="">
+									<div class="xs-item-header-content">
+                                        {% if product['p_percentage_funded']|int < 10 %}
+                                        <div class="xs-skill-bar-v3" data-percent="1{{ product['p_percentage_funded'] }}%">
+                                            {% else %}
+										<div class="xs-skill-bar-v3" data-percent="{{ product['p_percentage_funded'] }}%">
+                                            {% endif %}
+											<div class="xs-skill-track">
+												<p>{{ product['p_percentage_funded'] }}%</p>
+											</div>
+										</div>
+									</div>
+								</div><!-- .fundpress-item-header END -->
+								<div class="fundpress-item-content">
+									<ul class="xs-simple-tag fundpress-simple-tag">
+                                        {% for tags in product['tag'] %}
+										<li><a href="">{{ tags }}</a></li>
+										{% endfor %}
+									</ul>
+									<a href="#" class="d-block color-navy-blue fundpress-post-title">{{ product['product_name'] }}</a>
+									<ul class="xs-list-with-content fundpress-list-item-content">
+										<li>${{ "{:,.0f}".format(product['product_current_amount']) }}<span>Invested</span></li>
+										<li><span class="number-percentage-count">{{ product['p_percentage_funded'] }}%</span><span>Funded</span></li>
+										<li>{{ product['product_duration'] }}<span>Days to go</span></li>
+									</ul>
+								</div><!-- .fundpress-item-content END -->
+							</div>
+						</div>
+                         {% endfor %}
+					</div>
+				</div>
+                  {% endfor %}
+			</div>
+		</div>
+	</div>
+
+</section><!-- End cause matters -->
+
+
+<!-- event section -->
+<section class="xs-bg fundpress-event-section xs-section-padding v3" style="background-image: url(assets/images/icons-background-1.png);">
+	<div class="container">
+		<div class="xs-section-heading row xs-margin-0">
+			<div class="fundpress-heading-title xs-padding-0 col-md-9 col-xl-9">
+				<h2 class="color-navy-blue">Upcoming Fundings</h2>
+				<span class="xs-separetor dashed-separetor fundpress-separetor"></span>
+				<p>This equity FundPress platform allows businesses to sell shares in their company to accredited investors.</p>
+			</div><!-- .xs-heading-title .fundpress-heading-title .xs-col-9 END -->
+			<!--<div class="xs-btn-wraper xs-padding-0 col-md-3 col-xl-3 d-flex-center-end">
+				<a href="events.html" class="xs-btn round-btn navy-blue-btn">Events</a>
+			</div><!-- .xs-btn-wraper .d-flex-center-end .xs-col-3 END -->
+		</div><!-- .xs-section-heading .fundpress-section-heading .xs-spilit-container END -->
+		<div class="fundpress-event-wraper">
+			<div class="fundpress-single-event-wraper row">
+				<div class="col-md-3">
+					<div class="fundpress-event-image">
+						<img src="assets/images/event/event-1.jpg" alt="">
+					</div>
+				</div>
+				<div class="col-md-6 fundpress-event-details">
+					<h3 class="color-white xs-post-title fundpress-post-title">Using HRV and CorSense to Otimize Training.</h3>
+					<p>In a time of overwhelming emotions, sadness, and pain, the last thing the  families need to be worrying obligations associated with this tragic.</p>
+					<div class="countdown-container xs-countdown-timer" data-countdown="2019/01/01"></div>
+				</div>
+				<div class="col-md-3">
+					<div class="fundpress-btn-wraper">
+						<a href="#" class="xs-btn round-btn green-btn">subscribe</a>
+					</div>
+				</div>
+			</div><!-- .fundpress-single-event-wraper END -->
+			<div class="fundpress-single-event-wraper row">
+				<div class="col-md-3">
+					<div class="fundpress-event-image">
+						<img src="assets/images/event/event-2.jpg" alt="">
+					</div>
+				</div>
+				<div class="col-md-6 fundpress-event-details">
+					<h3 class="color-white xs-post-title fundpress-post-title">Otimize Training & Recovery Using HRV</h3>
+					<p>In a time of overwhelming emotions, sadness, and pain, the last thing the  families need to be worrying obligations associated with this tragic.</p>
+					<div class="countdown-container xs-countdown-timer" data-countdown="2020/01/01"></div>
+				</div>
+				<div class="col-md-3">
+					<div class="fundpress-btn-wraper">
+						<a href="#" class="xs-btn round-btn green-btn">subscribe</a>
+					</div>
+				</div>
+			</div><!-- .fundpress-single-event-wraper END -->
+		</div>
+	</div>
+</section><!-- End event section -->
+
+<!-- journal section -->
+<section class="xs-gray-bg fundpress-journal-section xs-section-padding v3">
+	<div class="container">
+		<div class="xs-section-heading row xs-margin-0">
+			<div class="fundpress-heading-title xs-padding-0 col-md-9 col-xl-9">
+				<h2 class="color-navy-blue">From the Journal</h2>
+				<span class="xs-separetor dashed-separetor fundpress-separetor"></span>
+				<p>It allows you to gather monthly subscriptions from fans to help fund your creative projects. They also encourage their users to offer rewards to fans as a way to repay them for their support.</p>
+			</div><!-- .xs-heading-title .fundpress-heading-title .xs-col-9 END -->
+			<div class="xs-btn-wraper xs-padding-0 col-xl-3 col-md-3 d-flex-center-end">
+				<a href="news-feed.html" class="xs-btn round-btn navy-blue-btn">Blog</a>
+			</div><!-- .xs-btn-wraper .d-flex-center-end .xs-col-3 END -->
+		</div><!-- .xs-section-heading .fundpress-section-heading .xs-spilit-container END -->
+		<div class="row">
+			<div class="col-md-6 col-sm-12 col-lg-4">
+				<div class="fundpress-grid-item-content xs-box-shadow fundpress-from-journal">
+					<div class="xs-item-header fundpress-item-header entry-thumbnail">
+						<img src="assets/images/journal/journal-1.jpg" alt="">
+						<div class="xs-item-header-content">
+							<a href="#" class="full-round icon-identify-btn green-btn"><i class="fa fa-play"></i></a>
+						</div>
+					</div><!-- .xs-item-header .fundpress-item-header END -->
+					<div class="fundpress-item-content xs-content-padding bg-color-white">
+						<div class="entry-header xs-mb-30">
+							<div class="post-author">
+								<ul class="xs-simple-tag xs-simple-tag-v2 fundpress-simple-tag author-links">
+									<li><span>By</span><a href="#" rel="author">Rose</a></li>
+								</ul>
+							</div>
+							<h4 class="entry-title">
+								<a href="#" class="xs-mb-0 xs-post-title color-navy-blue fundpress-post-title">Professional Soundcard</a>
+							</h4>
+							<p>Founded by berlin’s clubcommissioner alongside amsterdam’s with nightori mayor, the creative footprint.</p>
+						</div>
+
+						<span class="xs-separetor border-separetor xs-separetor-v2 fundpress-separetor xs-mb-20"></span>
+
+						<div class="entry-content xs-spilit-container xs-footer-content">
+							<div class="xs-col-6 text-left">
+								<span class="date">
+									<a href="" title="" rel="bookmark">
+										<i class="fa fa-calendar" aria-hidden="true"></i>
+										<span class="entry-date xs-entry-date">March 15, 2018</span>
+									</a>
+								</span>
+							</div>
+							<div class="xs-col-6 text-right">
+								<span class="categories-links">
+									<a href="#" class="xs-blog-meta-tag green-bg bold color-white xs-border-radius" rel="category tag">Project</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12 col-lg-4">
+				<div class="fundpress-grid-item-content xs-box-shadow fundpress-from-journal">
+					<div class="xs-item-header fundpress-item-header entry-thumbnail">
+						<img src="assets/images/journal/journal-2.jpg" alt="">
+						<div class="xs-item-header-content">
+							<a href="#" class="full-round icon-identify-btn green-btn"><i class="fa fa-image"></i></a>
+						</div>
+					</div><!-- .xs-item-header .fundpress-item-header END -->
+					<div class="fundpress-item-content xs-content-padding bg-color-white">
+						<div class="entry-header xs-mb-30">
+							<div class="post-author">
+								<ul class="xs-simple-tag xs-simple-tag-v2 fundpress-simple-tag author-links">
+									<li><span>By</span><a href="#" rel="author">Rose</a></li>
+								</ul>
+							</div>
+							<h4 class="entry-title">
+								<a href="#" class="xs-mb-0 xs-post-title color-navy-blue fundpress-post-title">A New Album by Rebecca</a>
+							</h4>
+							<p>Founded by berlin’s clubcommissioner alongside amsterdam’s with nightori mayor, the creative footprint.</p>
+						</div>
+
+						<span class="xs-separetor border-separetor xs-separetor-v2 fundpress-separetor xs-mb-20"></span>
+
+						<div class="entry-content xs-spilit-container xs-footer-content">
+							<div class="xs-col-6 text-left">
+								<span class="date">
+									<a href="" title="" rel="bookmark">
+										<i class="fa fa-calendar" aria-hidden="true"></i>
+										<span class="entry-date xs-entry-date">March 15, 2018</span>
+									</a>
+								</span>
+							</div>
+							<div class="xs-col-6 text-right">
+								<span class="categories-links">
+									<a href="#" class="xs-blog-meta-tag green-bg bold color-white xs-border-radius" rel="category tag">Adoption</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12 col-lg-4">
+				<div class="fundpress-grid-item-content xs-box-shadow fundpress-from-journal">
+					<div class="xs-item-header fundpress-item-header entry-thumbnail">
+						<img src="assets/images/journal/journal-3.jpg" alt="">
+						<div class="xs-item-header-content">
+							<a href="#" class="full-round icon-identify-btn green-btn"><i class="fa fa-video-camera"></i></a>
+						</div>
+					</div><!-- .xs-item-header .fundpress-item-header END -->
+					<div class="fundpress-item-content xs-content-padding bg-color-white">
+						<div class="entry-header xs-mb-30">
+							<div class="post-author">
+								<ul class="xs-simple-tag xs-simple-tag-v2 fundpress-simple-tag author-links">
+									<li><span>By</span><a href="#" rel="author">Rose</a></li>
+								</ul>
+							</div>
+							<h4 class="entry-title">
+								<a href="#" class="xs-mb-0 xs-post-title color-navy-blue fundpress-post-title">First Bionic Wireless</a>
+							</h4>
+							<p>Founded by berlin’s club commissioner alongside amsterdam’s with nightori mayor, the creative footprint.</p>
+						</div>
+
+						<span class="xs-separetor border-separetor xs-separetor-v2 fundpress-separetor xs-mb-20"></span>
+
+						<div class="entry-content xs-spilit-container xs-footer-content">
+							<div class="xs-col-6 text-left">
+								<span class="date">
+									<a href="" title="" rel="bookmark">
+										<i class="fa fa-calendar" aria-hidden="true"></i>
+										<span class="entry-date xs-entry-date">March 15, 2018</span>
+									</a>
+								</span>
+							</div>
+							<div class="xs-col-6 text-right">
+								<span class="categories-links">
+									<a href="#" class="xs-blog-meta-tag green-bg bold color-white xs-border-radius" rel="category tag">Film</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section><!-- End journal section -->
+
+<!-- sponsor section -->
+<section class="xs-bg xs-section-padding fundpress-sponsor-section" style="background-image: url(assets/images/background/sponsor_section_bg.jpg);">
+	<div class="xs-solid-overlay xs-bg-white"></div>
+	<div class="container fundpress-partners-wraper">
+		<div class="fundpress-heading-title">
+			<h2 class="color-navy-blue xs-mb-0">Trusted by the companies in the world.</h2>
+		</div><!-- .xs-heading-title .fundpress-heading-title END -->
+		<div class="content-center">
+			<ul class="fundpress-partners">
+				<li><a href="#" class="full-round fundpress-single-partner"><img src="assets/images/partner/partner-1.png" alt=""></a></li>
+				<li><a href="#" class="full-round fundpress-single-partner"><img src="assets/images/partner/partner-2.png" alt=""></a></li>
+				<li><a href="#" class="full-round fundpress-single-partner"><img src="assets/images/partner/partner-3.png" alt=""></a></li>
+				<li><a href="#" class="full-round fundpress-single-partner"><img src="assets/images/partner/partner-4.png" alt=""></a></li>
+			</ul><!-- .fundpress-partners END -->
+		</div>
+		<div class="content-center">
+			<ul class="fundpress-partners">
+				<li><a href="#" class="full-round fundpress-single-partner"><img src="assets/images/partner/partner-5.png" alt=""></a></li>
+				<li><a href="#" class="full-round fundpress-single-partner"><img src="assets/images/partner/partner-6.png" alt=""></a></li>
+				<li><a href="#" class="full-round fundpress-single-partner"><img src="assets/images/partner/partner-7.png" alt=""></a></li>
+				<li><a href="#" class="full-round fundpress-single-partner"><img src="assets/images/partner/partner-8.png" alt=""></a></li>
+				<li><a href="#" class="full-round fundpress-single-partner"><img src="assets/images/partner/partner-9.png" alt=""></a></li>
+			</ul><!-- .fundpress-partners END -->
+		</div>
+	</div>
+</section><!-- End sponsor section -->
+		<footer class="xs-footer-section fundpress-footer-section v3">
+			<div class="fundpress-footer-top-layer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5">
+							<div class="fundpress-single-footer">
+								<div class="xs-footer-logo">
+									<a href="index.html">
+										<img src="assets/images/footer_logo.png" alt="">
+									</a>
+								</div>
+								<div class="fundpress-footer-content">
+									<p>WASP is an investment platform that lowers the threshold for high-entrance barrier investment.</p>
+								</div><!-- . END -->
+								<ul class="xs-social-list fundpress-social-list">
+									<li><a href="" class="color-facebook full-round"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="" class="color-twitter full-round"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="" class="color-dribbble full-round"><i class="fa fa-dribbble"></i></a></li>
+									<li><a href="" class="color-pinterest full-round"><i class="fa fa-pinterest"></i></a></li>
+									<li><a href="" class="color-instagram full-round"><i class="fa fa-instagram"></i></a></li>
+								</ul><!-- .xs-social-list .fundpress-social-list END -->
+							</div><!-- .fundpress-single-footer END -->
+						</div>
+						<div class="col-md-3">
+							<div class="fundpress-single-footer">
+								<div class="xs-footer-title">
+									<h4 class="color-white">Explore Campaigns</h4>
+								</div><!-- .xs-footer-title END -->
+								<nav class="xs-footer-menu">
+									<ul>
+										<li><a href="index.html">Home</a></li>
+										<li><a href="#">Gadgets</a></li>
+										<li><a href="#">Monuments</a></li>
+										<li><a href="#">Travels</a></li>
+										<li><a href="#">Accessoriers</a></li>
+										<li><a href="#">Books</a></li>
+										<li><a href="#">Community Programs</a></li>
+										<li><a href="#">Design</a></li>
+									</ul>
+								</nav><!-- .xs-footer-menu .xs-block-menu END -->
+							</div><!-- .fundpress-single-footer END -->
+						</div>
+						<div class="col-md-2">
+							<div class="fundpress-single-footer">
+								<div class="xs-footer-title">
+									<h4 class="color-white">About</h4>
+								</div><!-- .xs-footer-title END -->
+								<nav class="xs-footer-menu">
+									<ul>
+										<li><a href="about.html">About Us</a></li>
+										<li><a href="#">How It Works</a></li>
+										<li><a href="#">Careers</a></li>
+										<li><a href="#">Press</a></li>
+										<li><a href="news-feed.html">Blog</a></li>
+										<li><a href="contact.html">Contact</a></li>
+									</ul>
+								</nav><!-- .xs-footer-menu .xs-block-menu END -->
+							</div><!-- .fundpress-single-footer END -->
+						</div>
+						<div class="col-md-2">
+							<div class="fundpress-single-footer">
+								<div class="xs-footer-title">
+									<h4 class="color-white">Help</h4>
+								</div><!-- .xs-footer-title END -->
+								<nav class="xs-footer-menu">
+									<ul>
+										<li><a href="faq.html">FAQ</a></li>
+										<li><a href="#">Our Rules</a></li>
+										<li><a href="#">Trust & Safety</a></li>
+										<li><a href="#">Support</a></li>
+										<li><a href="#">Terms of Use</a></li>
+										<li><a href="#">Privacy Policy</a></li>
+									</ul>
+								</nav><!-- .xs-footer-menu .xs-block-menu END -->
+							</div><!-- .fundpress-single-footer END -->
+						</div>
+					</div>
+				</div>
+			</div><!-- .xs-footer-wraper .fundpress-footer-top-layer END -->
+		</footer>
+<!-- Authentication/Login/SignUp -->
+		<script type="text/javascript" src="{{url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/js/bootstrap-formhelpers.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+		<script type="text/javascript" src="{{url_for('static',filename='js/functions/form.js') }}"></script>
+        <script type="text/javascript" src="{{url_for('static',filename='js/functions/facebook_login.js') }}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/plugins.js') }}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/Popper.js') }}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/bootstrap.min.js') }}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/isotope.pkgd.min.js') }}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/jquery.easing.1.3.js') }}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/jquery.countdown.min.js') }}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/parallax.min.js') }}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/jquery.easypiechart.min.js') }}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/spectragram.min.js') }}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/jquery.waypoints.min.js') }}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/scrollax.js') }}"></script>
+        <script type="text/javascript" src="{{url_for('static', filename='js/functions/load_campaign.js') }}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/main.js') }}"></script>
+	</body>
+</html>

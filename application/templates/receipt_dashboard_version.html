@@ -1,0 +1,47 @@
+<div class="body-d">
+	<div class="container-d">
+		<div class="left-d">
+			<div class="info-box-d">
+				<div class="receipt-d">
+					Receipt for </br><div class="span-d">{{ content['f_name']}} {{ content['l_name']}}</div>
+				</div>
+				<div class="entry-d">
+					<i class="icon-wallet" aria-hidden="true"></i>
+					<p>Amount:</br><span>${{ content['total']}} USD</span></p>
+				</div>
+				<div class="entry-d">
+					<i class="icon-calendar" aria-hidden="true"></i>
+					<p>Date:</br><span>{{ content['created_time'] }}</span></p>
+				</div>
+				<!--<div class="entry">
+					<i class="icon-star" aria-hidden="true"></i>
+					<p>Issuer:</br><span>Dribbble</span></p>
+				</div>-->
+				<div class="entry-d">
+					<i class="icon-notebook" aria-hidden="true"></i>
+					<p>Sales ID:</br><span>{{ content['id'] }}</span></p>
+				</div>
+			</div>
+		</div>
+		<div class="right-d">
+			<div class="content-d">
+				<div class="header-d">
+					<img src="{{ url_for('static', filename='images/logo_1.svg') }}" alt="">
+					<h4>{{ content['created_time'] }}</h4>
+				</div>
+				<div class="main-d">
+					<h3>{{ content['product_name'] }}</h3>
+					<h4>Total: ${{ content['total']}} USD</h4>
+				</div>
+				<div class="message-d">
+                    <p>Hello {{ content['f_name']}} ,</br>You made a payment of ${{ content['total']}} {{ content['currency']}} to WASP financial, if there's an error, do send us an email at help@wasp.com</p>
+					<h6>It may take a few moments for this</br>transaction to appear in your account.</h6>
+				</div>
+				<div class="footer-d">
+					<a href="#">www.waspfinance.com/help</a>
+					<h6>Invoice ID: {{ content['id'] }}</h6>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
