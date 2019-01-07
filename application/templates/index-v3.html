@@ -13,43 +13,20 @@
 		<link rel="apple-touch-icon" href="apple-touch-icon.png">
         <script src="https://apis.google.com/js/platform.js" async defer></script>
         <meta name="google-signin-client_id" content="115190952528-rphtltdisor88ocd73094g0v1gpbi4kl.apps.googleusercontent.com">
-		<!-- Icon foont list -->
-		<link rel="stylesheet" href="{{url_for('static', filename='css/iconfont.css') }}">
+<!--<link rel="stylesheet" href="{{url_for('static', filename='css/iconfont.css') }}">
 		<link rel="stylesheet" href="{{url_for('static', filename='css/font-awesome.min.css') }}">
-<!--
-		<link rel="stylesheet" href="assets/css/iconfont.css">
-		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
--->
-		<!-- bootstrap -->
 		<link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css') }}">
-		<!--<link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
-		<!-- isotope -->
 		<link rel="stylesheet" href="{{url_for('static', filename='css/isotope.css') }}">
-		<!--<link rel="stylesheet" href="assets/css/isotope.css">-->
-		<!-- magnific -->
 		<link rel="stylesheet" href="{{url_for('static', filename='css/magnific-popup.css') }}">
-		<!--<link rel="stylesheet" href="assets/css/magnific-popup.css"> -->
-		<!-- owl carousel -->
 		<link rel="stylesheet" href="{{url_for('static', filename='css/owl.carousel.min.css') }}">
 		<link rel="stylesheet" href="{{url_for('static', filename='css/owl.theme.default.min.css') }}">
-		<!--<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">-->
-		<!-- woocommerce -->
 		<link rel="stylesheet" href="{{url_for('static', filename='css/woocommerce.css') }}">
-		<!--<link rel="stylesheet" href="assets/css/woocommerce.css">-->
-
-
-		<!--For Plugins external css-->
 		<link rel="stylesheet" href="{{url_for('static', filename='css/plugins.css') }}">
-		<!--<link rel="stylesheet" href="assets/css/plugins.css" />-->
-
-		<!--Theme custom css -->
 		<link rel="stylesheet" href="{{url_for('static', filename='css/style.css') }}">
-		<!--<link rel="stylesheet" href="assets/css/style.css">-->
-
-		<!--Theme Responsive css-->
-		<link rel="stylesheet" href="{{url_for('static', filename='css/responsive.css') }}">
-		<!--<link rel="stylesheet" href="assets/css/responsive.css" />-->
+		<link rel="stylesheet" href="{{url_for('static', filename='css/responsive.css') }}">-->
+		{% assets "main_css" %}
+		<link href="{{ ASSET_URL }}" rel="stylesheet">
+		{% endassets %}
 
 		<script type="text/javascript" src="{{url_for('static', filename='js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') }}"></script>
 		<!--<script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>-->
@@ -738,14 +715,15 @@
 			</div><!-- .xs-footer-wraper .fundpress-footer-top-layer END -->
 		</footer>
 <!-- Authentication/Login/SignUp -->
-		<script type="text/javascript" src="{{url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
+        <script type="text/javascript" src="{{url_for('static', filename='js/Popper.js') }}"></script>
+	<script type="text/javascript" src="{{url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/bootstrap.min.js') }}"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/js/bootstrap-formhelpers.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
-		<script type="text/javascript" src="{{url_for('static',filename='js/functions/form.js') }}"></script>
+		<!--<script type="text/javascript" src="{{url_for('static',filename='js/functions/form.js') }}"></script>
         <script type="text/javascript" src="{{url_for('static',filename='js/functions/facebook_login.js') }}"></script>
 		<script type="text/javascript" src="{{url_for('static', filename='js/plugins.js') }}"></script>
-		<script type="text/javascript" src="{{url_for('static', filename='js/Popper.js') }}"></script>
-		<script type="text/javascript" src="{{url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
 		<script type="text/javascript" src="{{url_for('static', filename='js/isotope.pkgd.min.js') }}"></script>
 		<script type="text/javascript" src="{{url_for('static', filename='js/jquery.easing.1.3.js') }}"></script>
 		<script type="text/javascript" src="{{url_for('static', filename='js/jquery.countdown.min.js') }}"></script>
@@ -757,6 +735,9 @@
 		<script type="text/javascript" src="{{url_for('static', filename='js/jquery.waypoints.min.js') }}"></script>
 		<script type="text/javascript" src="{{url_for('static', filename='js/scrollax.js') }}"></script>
         <script type="text/javascript" src="{{url_for('static', filename='js/functions/load_campaign.js') }}"></script>
-		<script type="text/javascript" src="{{url_for('static', filename='js/main.js') }}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/main.js') }}"></script>-->
+	{% assets "main_js" %}
+		<script type="text/javascript" src="{{ ASSET_URL }}"></script>
+	{% endassets %}
 	</body>
 </html>
