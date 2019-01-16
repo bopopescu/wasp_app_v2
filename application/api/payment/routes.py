@@ -1,6 +1,6 @@
 from flask import Blueprint,request,redirect,url_for,jsonify,render_template,flash
 from ..authentication.routes import login_required
-from ..database.model import update_list_item, update_prod_item,update_percentage,write_trans_item,get_transactions_receipt
+from ..database.model import update_list_item, update_prod_item,update_percentage,write_trans_item,get_transactions_receipt,update_invest_amount
 mod = Blueprint('payment',__name__)
 
 
@@ -16,6 +16,7 @@ def execute_payment():
         product_name = payment[0]['item_list']['items'][0]['name']
         write_trans_item(user_id,payment,info)
         update_percentage(product_name)
+        update_invest_amount(user_id,payment)
     except:
         print("Wrong")
     return jsonify({"payment": payment,"user_info":info,"t_id":trans_id})

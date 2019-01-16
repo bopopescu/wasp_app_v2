@@ -17,13 +17,26 @@ js=Bundle('js/functions/form.js','js/functions/facebook_login.js','js/plugins.js
 
 css=Bundle('css/iconfont.css','css/font-awesome.min.css','css/bootstrap.min.css','css/isotope.css','css/magnific-popup.css','css/owl.carousel.min.css',
            'css/owl.theme.default.min.css','css/woocommerce.css','css/plugins.css','css/plugins.css','css/style.css','css/responsive.css',output='gen/main.css',filters="cssmin")
+
+js_dash=Bundle('css/dashboard/jquery/jquery.js','css/dashboard/popper.js/popper.js','css/dashboard/bootstrap/bootstrap.js','css/dashboard/perfect-scrollbar/js/perfect-scrollbar.jquery.js',
+               'css/dashboard/moment/moment.js','css/dashboard/jquery-ui/jquery-ui.js','css/dashboard/jquery-switchbutton/jquery.switchButton.js','css/dashboard/peity/jquery.peity.js','css/dashboard/chartist/chartist.js',
+               'css/dashboard/jquery.sparkline.bower/jquery.sparkline.min.js','css/dashboard/d3/d3.js','css/dashboard/rickshaw/rickshaw.min.js','js/dashboard/bracket.js','js/dashboard/ResizeSensor.js','js/dashboard/dashboard.js',
+               output='gen/main_dashboard.js',filters='jsmin')
+css_dash=Bundle('css/dashboard/select2/css/select2.min.css','css/dashboard/datatables/jquery.dataTables.css','css/dashboard/font-awesome/css/font-awesome.css','css/dashboard/perfect-scrollbar/css/perfect-scrollbar.css','css/dashboard/jquery-switchbutton/jquery.switchButton.css',
+                'css/dashboard/rickshaw/rickshaw.min.css','css/dashboard/chartist/chartist.css','css/dashboard/bracket.css',output='gen/main_dashboard.css',filters='cssmin')
+js_secondary_market=Bundle('css/dashboard/jquery/jquery.js','css/dashboard/popper.js/popper.js','css/dashboard/bootstrap/bootstrap.js','css/dashboard/perfect-scrollbar/js/perfect-scrollbar.jquery.js',
+                           'css/dashboard/moment/moment.js','css/dashboard/jquery-ui/jquery-ui.js','css/dashboard/jquery-switchbutton/jquery.switchButton.js','css/dashboard/peity/jquery.peity.js'
+                           ,'css/dashboard/highlightjs/highlight.pack.js','css/dashboard/datatables/jquery.dataTables.js','css/dashboard/datatables-responsive/dataTables.responsive.js'
+                           ,'css/dashboard/select2/js/select2.min.js','js/dashboard/bracket.js',output='gen/market_dashboard.js',filters='jsmin')
 app = Flask(__name__)
 login_manager.init_app(app)
 assets = Environment(app)
 
 assets.register('main_css',css)
 assets.register('main_js',js)
-
+assets.register('dash_css',css_dash)
+assets.register('dash_js',js_dash)
+assets.register('secondary_js',js_secondary_market)
 CORS(app)
 Compress(app)
 app.secret_key = 'TheSecretSecretKey'

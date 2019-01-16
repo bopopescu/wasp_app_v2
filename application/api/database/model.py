@@ -9,6 +9,8 @@ def dynamodb_user_upload(attributes):
         # print(item)
         the_dictionary[item['Name']] = item['Value']
     the_dictionary['portfolio']=[]
+    the_dictionary['account_value']=0
+    the_dictionary['invested_amount']=0
     client = boto3.resource('dynamodb', region_name="ap-southeast-1")
     try:
         table = client.Table('wasp_account')
@@ -78,6 +80,21 @@ def update_prod_item(payment_id):
             ':val':decimal.Decimal(price)
         }
     )
+@task
+def update_invest_amount(username,payment_id):
+    client = boto3.resource('dynamodb', region_name="ap-southeast-1")
+    price = (payment_id[0]['amount']['total'])
+    table = client.Table('wasp_account')
+    response = table.update_item(
+        Key={
+            "sub":username
+        },
+        UpdateExpression = "set invested_amount = invested_amount + :val",
+        ExpressionAttributeValues={
+            ':val': decimal.Decimal(price)
+        }
+    )
+
 def get_portfolio_item(username):
     client = boto3.resource('dynamodb', region_name="ap-southeast-1")
     table  = client.Table('wasp_account')

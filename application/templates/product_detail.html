@@ -75,27 +75,36 @@
 			</div><!-- . END -->
 			<div class="nav-menus-wrapper">
 				<div class="xs-logo-wraper">
-					<a class="nav-brand xs-logo " href="index.html">
+						<a class="nav-brand xs-logo " href="{{ url_for('authentication.homepage') }}">
 						<img src="{{ url_for('static', filename='images/logo-white.svg') }}" alt="">
 					</a>
 				</div>
 				<ul class="nav-menu">
-					<li><a href="">Home</a>
-						<ul class="nav-dropdown">
-							<li><a href="index.html">home version 1</a></li>
-							<li><a href="index-v2.html">home version 2</a></li>
-							<li><a href="index-v3.html">home version 3</a></li>
-						</ul>
+					<li><a href="{{ url_for('authentication.homepage') }}">Home</a>
+
 					</li>
 					<li><a href="about.html">about</a></li>
 					<li><a href="contact.html">contact</a></li>
 				</ul>
-				<div class="xs-navs-button">
-					<ul class="xs-icon-with-text fundpress-icon-menu">
-						<li><a href="" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fa fa-unlock-alt color-green"></i>Log In</a></li>
+				{% if current_user.is_authenticated %}
+                <div class="xs-navs-button">
+                    <a class="xs-btn round-btn green-btn" href="{{ url_for('authentication.login_facebook') }}">My Dashboard</a>
+                </div>
+                {% else %}
+                <div class="xs-navs-button">
+					<ul class="xm-icon-with-text fundpress-icon-menu">
+						<li><a href="" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fa fa-unlock-alt color-green"></i>Log In<br>SignUp</a></li>
 						<!--<li class="d-block d-lg-none d-xl-block"><a href="#" class="xs-btn round-btn green-btn">start a campaign</a></li>-->
-					</ul>
+					<li > {% with messages = get_flashed_messages() %}
+                            {% if messages %}
+                                {% for message in messages%}
+                        <font color="red">{{ message }}</font>
+                                {% endfor %}
+                            {% endif %}
+                        {% endwith %}</li>
+                    </ul>
 				</div>
+                {% endif %}
 			</div><!-- .nav-menus-wrapper END -->
 		</nav><!-- .xs-menus .fundpress-menu END -->
 	</div>
@@ -234,7 +243,7 @@
 </div>
 <!-- welcome section -->
 <!--breadcumb start here-->
-<section class="xs-inner-welcome-section fundpress-inner-welcome-section fundpress-inner-bg-1 parallax-window" data-parallax="scroll" data-image-src="{{ url_for('static', filename='images/background/details-bg.jpg') }}" >
+<section class="xs-inner-welcome-section fundpress-inner-welcome-section fundpress-inner-bg-1 parallax-window" data-parallax="scroll" data-image-src="{{ url_for('static', filename='images/background/b_1.jpg') }}" >
 	<div class="xs-solid-overlay xs-bg-black"></div>
 	<div class="container">
 		<div class="fundpress-inner-welcome-content xs-inner-welcome-content">
@@ -291,12 +300,12 @@
 						<div class="xs-sync-slider-thumb-content">
 							<img src="assets/images/product/product_thumb_2.jpg" alt="">
 						</div>
-						<div class="xs-sync-slider-thumb-content">
+						<!--<div class="xs-sync-slider-thumb-content">
 							<img src="assets/images/product/product_thumb_5.jpg" alt="">
 							<div class="xs-sync-slider icon-position-center">
 								<a href="" class="full-round icon-identify-btn blue-btn opacity-btn xs-box-shadow"><i class="fa fa-play"></i></a>
 							</div>
-						</div>
+						</div>-->
 						<div class="xs-sync-slider-thumb-content">
 							<img src="assets/images/product/product_thumb_3.jpg" alt="">
 						</div>
@@ -335,11 +344,32 @@
 					<div class="tab-content xs-text-tab-content">
 						<div role="tabpanel" class="tab-pane fadeInRights show fade in active" id="description">
 							<h5 class="color-navy-blue xs-mb-30">{{ products['description'][0] }}</h5>
+
 							<p class="xs-content-description fundpress-content-description xs-mb-30">{{products['description'][1] }}</p>
-							<h3 class="bold color-green xs-post-title fundpress-post-title xs-mb-30">Mission:</h3>
-							<p class="xs-content-description fundpress-content-description xs-mb-30">{{products['description'][2] }}</p>
-							<h3 class="bold color-green xs-post-title fundpress-post-title xs-mb-30">Vision:</h3>
-							<p class="xs-content-description fundpress-content-description xs-mb-0">{{products['description'][3] }} </p>
+							<div class="row">
+
+									<h3 class="bold color-green xs-post-title fundpress-post-title xs-mb-30 ">Bond Issuer: </h3>
+								<div class="ml-3"></div>
+								<p class=" fundpress-post-title xs-mb-30"> {{products['description'][2] }}</p>
+							<div class="col-1"></div>
+							<h3 class="bold color-green xs-post-title fundpress-post-title xs-mb-30">Issue Date:</h3>
+								<div class="ml-3"></div>
+							<p class=" fundpress-post-title xs-mb-30">{{products['description'][3] }} </p>
+								</div>
+							<div class="row">
+							<h3 class="bold color-green xs-post-title fundpress-post-title xs-mb-30">Annual Coupon Rate:</h3>
+							<div class="ml-3"></div>
+							<p class=" fundpress-post-title xs-mb-30">{{products['description'][4] }} </p>
+								<div class="col-1"></div>
+							<h3 class="bold color-green xs-post-title fundpress-post-title xs-mb-30">Issue Price:</h3>
+							<div class="ml-3"></div>
+								<p class=" fundpress-post-title xs-mb-30">{{products['description'][5] }} </p>
+							</div>
+							<div class="row">
+							<h3 class="bold color-green xs-post-title fundpress-post-title xs-mb-30">Bond Rating:</h3>
+							<div class="ml-3"></div>
+							<p class=" fundpress-post-title xs-mb-0">{{products['description'][6] }} </p>
+							</div>
 						</div><!-- tab-pane fadeInRights -->
 						<div role="tabpanel" class="tab-pane fadeInRights fade" id="updates">
 							<div class="xs-ul-list fundpress-content-text-list-wraper">

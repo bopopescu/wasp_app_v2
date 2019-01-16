@@ -61,38 +61,9 @@
 					</a>
 				</div>
 				<ul class="nav-menu">
-					<li><a href="">Home</a>
-						<ul class="nav-dropdown">
-							<li><a href="index.html">home version 1</a></li>
-						</ul>
-					</li>
+					<li><a href="{{ url_for('authentication.homepage') }}">Home</a></li>
+                    <li><a href="{{ url_for('authentication.trade_market_page')}}"></a></li>
 					<li><a href="{{ url_for('about_us.about')}}">about</a></li>
-					<!--
-					<li><a href="#">Blog</a>
-						<ul class="nav-dropdown">
-							<li><a href="news-feed.html ">blog version 1</a></li>
-							<li><a href="news-feed-v2.html ">blog version 2</a></li>
-							<li><a href="news-feed-v3.html">blog version 3</a></li>
-							<li><a href="blog-single.html">blog details </a></li>
-						</ul>
-					</li>-->
-					<li><a href="#">contact</a></li>
-                    <!--
-					<li><a href="#">pages</a>
-						<ul class="nav-dropdown">
-							<li><a href="team-member-details.html ">team details</a></li>
-							<li><a href="progress.html ">progress</a></li>
-							<li><a href="progress-successful.html">progress successful</a></li>
-							<li><a href="progress-explore.html">progress explore</a></li>
-							<li><a href="events.html">events</a></li>
-							<li><a href="faq.html">faq</a></li>
-							<li><a href="product_detail.html ">fund-details</a></li>
-							<li><a href="we-do.html">we do</a></li>
-							<li><a href="portfolio.html">portfolio</a></li>
-							<li><a href="shop.html">Shop</a></li>
-							<li><a href="single-shop.html">single Shop</a></li>
-						</ul>
-					</li>-->
 				</ul>
                 {% if current_user.is_authenticated %}
                 <div class="xs-navs-button">
@@ -414,18 +385,17 @@
 			</div>
 		</div>
 	</div>
-
+    </div>
 </section><!-- End cause matters -->
 
-
 <!-- event section -->
-<section class="xs-bg fundpress-event-section xs-section-padding v3" style="background-image: url(assets/images/icons-background-1.png);">
+<section class="xs-bg fundpress-event-section xs-section-padding v3" style="">
 	<div class="container">
 		<div class="xs-section-heading row xs-margin-0">
 			<div class="fundpress-heading-title xs-padding-0 col-md-9 col-xl-9">
-				<h2 class="color-navy-blue">Upcoming Fundings</h2>
+				<h2 class="color-navy-blue">Upcoming Products</h2>
 				<span class="xs-separetor dashed-separetor fundpress-separetor"></span>
-				<p>This equity FundPress platform allows businesses to sell shares in their company to accredited investors.</p>
+				<p>This allows retail investor to make investment into accredited investor products while maintaing a very low cost.</p>
 			</div><!-- .xs-heading-title .fundpress-heading-title .xs-col-9 END -->
 			<!--<div class="xs-btn-wraper xs-padding-0 col-md-3 col-xl-3 d-flex-center-end">
 				<a href="events.html" class="xs-btn round-btn navy-blue-btn">Events</a>
@@ -435,13 +405,13 @@
 			<div class="fundpress-single-event-wraper row">
 				<div class="col-md-3">
 					<div class="fundpress-event-image">
-						<img src="assets/images/event/event-1.jpg" alt="">
+						<img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/bonds.jpg" alt="">
 					</div>
 				</div>
 				<div class="col-md-6 fundpress-event-details">
-					<h3 class="color-white xs-post-title fundpress-post-title">Using HRV and CorSense to Otimize Training.</h3>
-					<p>In a time of overwhelming emotions, sadness, and pain, the last thing the  families need to be worrying obligations associated with this tragic.</p>
-					<div class="countdown-container xs-countdown-timer" data-countdown="2019/01/01"></div>
+					<h3 class="color-white xs-post-title fundpress-post-title">Financial BONDS.</h3>
+					<p>Accredited Investor and Cooperate Bonds are expensive, utilizing crowdfunding, we can enjoy the benefit of an accredited investor investment, while not having to fork out so much.</p>
+					<div class="countdown-container xs-countdown-timer" data-countdown="2019/01/20"></div>
 				</div>
 				<div class="col-md-3">
 					<div class="fundpress-btn-wraper">
@@ -452,13 +422,15 @@
 			<div class="fundpress-single-event-wraper row">
 				<div class="col-md-3">
 					<div class="fundpress-event-image">
-						<img src="assets/images/event/event-2.jpg" alt="">
+						<img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/etf.png" alt="">
 					</div>
 				</div>
 				<div class="col-md-6 fundpress-event-details">
-					<h3 class="color-white xs-post-title fundpress-post-title">Otimize Training & Recovery Using HRV</h3>
-					<p>In a time of overwhelming emotions, sadness, and pain, the last thing the  families need to be worrying obligations associated with this tragic.</p>
-					<div class="countdown-container xs-countdown-timer" data-countdown="2020/01/01"></div>
+					<h3 class="color-white xs-post-title fundpress-post-title">Curated ETFs</h3>
+					<p>ETFs has long been a pool of stocks/bonds that was carefully selected by a team of expert,
+						but what if our expertise select a pool of ETFs and you as an investor get to pick base on your
+						interest of the future technology such as TechFUND, BankETF, GreenEnergyETFs.</p>
+					<div class="countdown-container xs-countdown-timer" data-countdown="2019/01/20"></div>
 				</div>
 				<div class="col-md-3">
 					<div class="fundpress-btn-wraper">
@@ -470,166 +442,26 @@
 	</div>
 </section><!-- End event section -->
 
-<!-- journal section -->
-<section class="xs-gray-bg fundpress-journal-section xs-section-padding v3">
-	<div class="container">
-		<div class="xs-section-heading row xs-margin-0">
-			<div class="fundpress-heading-title xs-padding-0 col-md-9 col-xl-9">
-				<h2 class="color-navy-blue">From the Journal</h2>
-				<span class="xs-separetor dashed-separetor fundpress-separetor"></span>
-				<p>It allows you to gather monthly subscriptions from fans to help fund your creative projects. They also encourage their users to offer rewards to fans as a way to repay them for their support.</p>
-			</div><!-- .xs-heading-title .fundpress-heading-title .xs-col-9 END -->
-			<div class="xs-btn-wraper xs-padding-0 col-xl-3 col-md-3 d-flex-center-end">
-				<a href="news-feed.html" class="xs-btn round-btn navy-blue-btn">Blog</a>
-			</div><!-- .xs-btn-wraper .d-flex-center-end .xs-col-3 END -->
-		</div><!-- .xs-section-heading .fundpress-section-heading .xs-spilit-container END -->
-		<div class="row">
-			<div class="col-md-6 col-sm-12 col-lg-4">
-				<div class="fundpress-grid-item-content xs-box-shadow fundpress-from-journal">
-					<div class="xs-item-header fundpress-item-header entry-thumbnail">
-						<img src="assets/images/journal/journal-1.jpg" alt="">
-						<div class="xs-item-header-content">
-							<a href="#" class="full-round icon-identify-btn green-btn"><i class="fa fa-play"></i></a>
-						</div>
-					</div><!-- .xs-item-header .fundpress-item-header END -->
-					<div class="fundpress-item-content xs-content-padding bg-color-white">
-						<div class="entry-header xs-mb-30">
-							<div class="post-author">
-								<ul class="xs-simple-tag xs-simple-tag-v2 fundpress-simple-tag author-links">
-									<li><span>By</span><a href="#" rel="author">Rose</a></li>
-								</ul>
-							</div>
-							<h4 class="entry-title">
-								<a href="#" class="xs-mb-0 xs-post-title color-navy-blue fundpress-post-title">Professional Soundcard</a>
-							</h4>
-							<p>Founded by berlin’s clubcommissioner alongside amsterdam’s with nightori mayor, the creative footprint.</p>
-						</div>
-
-						<span class="xs-separetor border-separetor xs-separetor-v2 fundpress-separetor xs-mb-20"></span>
-
-						<div class="entry-content xs-spilit-container xs-footer-content">
-							<div class="xs-col-6 text-left">
-								<span class="date">
-									<a href="" title="" rel="bookmark">
-										<i class="fa fa-calendar" aria-hidden="true"></i>
-										<span class="entry-date xs-entry-date">March 15, 2018</span>
-									</a>
-								</span>
-							</div>
-							<div class="xs-col-6 text-right">
-								<span class="categories-links">
-									<a href="#" class="xs-blog-meta-tag green-bg bold color-white xs-border-radius" rel="category tag">Project</a></span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6 col-sm-12 col-lg-4">
-				<div class="fundpress-grid-item-content xs-box-shadow fundpress-from-journal">
-					<div class="xs-item-header fundpress-item-header entry-thumbnail">
-						<img src="assets/images/journal/journal-2.jpg" alt="">
-						<div class="xs-item-header-content">
-							<a href="#" class="full-round icon-identify-btn green-btn"><i class="fa fa-image"></i></a>
-						</div>
-					</div><!-- .xs-item-header .fundpress-item-header END -->
-					<div class="fundpress-item-content xs-content-padding bg-color-white">
-						<div class="entry-header xs-mb-30">
-							<div class="post-author">
-								<ul class="xs-simple-tag xs-simple-tag-v2 fundpress-simple-tag author-links">
-									<li><span>By</span><a href="#" rel="author">Rose</a></li>
-								</ul>
-							</div>
-							<h4 class="entry-title">
-								<a href="#" class="xs-mb-0 xs-post-title color-navy-blue fundpress-post-title">A New Album by Rebecca</a>
-							</h4>
-							<p>Founded by berlin’s clubcommissioner alongside amsterdam’s with nightori mayor, the creative footprint.</p>
-						</div>
-
-						<span class="xs-separetor border-separetor xs-separetor-v2 fundpress-separetor xs-mb-20"></span>
-
-						<div class="entry-content xs-spilit-container xs-footer-content">
-							<div class="xs-col-6 text-left">
-								<span class="date">
-									<a href="" title="" rel="bookmark">
-										<i class="fa fa-calendar" aria-hidden="true"></i>
-										<span class="entry-date xs-entry-date">March 15, 2018</span>
-									</a>
-								</span>
-							</div>
-							<div class="xs-col-6 text-right">
-								<span class="categories-links">
-									<a href="#" class="xs-blog-meta-tag green-bg bold color-white xs-border-radius" rel="category tag">Adoption</a></span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6 col-sm-12 col-lg-4">
-				<div class="fundpress-grid-item-content xs-box-shadow fundpress-from-journal">
-					<div class="xs-item-header fundpress-item-header entry-thumbnail">
-						<img src="assets/images/journal/journal-3.jpg" alt="">
-						<div class="xs-item-header-content">
-							<a href="#" class="full-round icon-identify-btn green-btn"><i class="fa fa-video-camera"></i></a>
-						</div>
-					</div><!-- .xs-item-header .fundpress-item-header END -->
-					<div class="fundpress-item-content xs-content-padding bg-color-white">
-						<div class="entry-header xs-mb-30">
-							<div class="post-author">
-								<ul class="xs-simple-tag xs-simple-tag-v2 fundpress-simple-tag author-links">
-									<li><span>By</span><a href="#" rel="author">Rose</a></li>
-								</ul>
-							</div>
-							<h4 class="entry-title">
-								<a href="#" class="xs-mb-0 xs-post-title color-navy-blue fundpress-post-title">First Bionic Wireless</a>
-							</h4>
-							<p>Founded by berlin’s club commissioner alongside amsterdam’s with nightori mayor, the creative footprint.</p>
-						</div>
-
-						<span class="xs-separetor border-separetor xs-separetor-v2 fundpress-separetor xs-mb-20"></span>
-
-						<div class="entry-content xs-spilit-container xs-footer-content">
-							<div class="xs-col-6 text-left">
-								<span class="date">
-									<a href="" title="" rel="bookmark">
-										<i class="fa fa-calendar" aria-hidden="true"></i>
-										<span class="entry-date xs-entry-date">March 15, 2018</span>
-									</a>
-								</span>
-							</div>
-							<div class="xs-col-6 text-right">
-								<span class="categories-links">
-									<a href="#" class="xs-blog-meta-tag green-bg bold color-white xs-border-radius" rel="category tag">Film</a></span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section><!-- End journal section -->
 
 <!-- sponsor section -->
-<section class="xs-bg xs-section-padding fundpress-sponsor-section" style="background-image: url(assets/images/background/sponsor_section_bg.jpg);">
+<section class="xs-gray-bg xs-bg xs-section-padding fundpress-sponsor-section" style="">
 	<div class="xs-solid-overlay xs-bg-white"></div>
 	<div class="container fundpress-partners-wraper">
 		<div class="fundpress-heading-title">
-			<h2 class="color-navy-blue xs-mb-0">Trusted by the companies in the world.</h2>
+			<h2 class="color-navy-blue xs-mb-0">Featured Unique ETFs from Prominent Industry Leader apart from ours.</h2>
 		</div><!-- .xs-heading-title .fundpress-heading-title END -->
 		<div class="content-center">
 			<ul class="fundpress-partners">
-				<li><a href="#" class="full-round fundpress-single-partner"><img src="assets/images/partner/partner-1.png" alt=""></a></li>
-				<li><a href="#" class="full-round fundpress-single-partner"><img src="assets/images/partner/partner-2.png" alt=""></a></li>
-				<li><a href="#" class="full-round fundpress-single-partner"><img src="assets/images/partner/partner-3.png" alt=""></a></li>
-				<li><a href="#" class="full-round fundpress-single-partner"><img src="assets/images/partner/partner-4.png" alt=""></a></li>
+				<li><a href="#" class="full-round fundpress-single-partner"><img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/vanguard.png" alt=""></a></li>
+
+				<li><a href="#" class="full-round fundpress-single-partner"><img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/fidelity.png" alt=""></a></li>
 			</ul><!-- .fundpress-partners END -->
 		</div>
 		<div class="content-center">
 			<ul class="fundpress-partners">
-				<li><a href="#" class="full-round fundpress-single-partner"><img src="assets/images/partner/partner-5.png" alt=""></a></li>
-				<li><a href="#" class="full-round fundpress-single-partner"><img src="assets/images/partner/partner-6.png" alt=""></a></li>
-				<li><a href="#" class="full-round fundpress-single-partner"><img src="assets/images/partner/partner-7.png" alt=""></a></li>
-				<li><a href="#" class="full-round fundpress-single-partner"><img src="assets/images/partner/partner-8.png" alt=""></a></li>
-				<li><a href="#" class="full-round fundpress-single-partner"><img src="assets/images/partner/partner-9.png" alt=""></a></li>
+				<li><a href="#" class="full-round fundpress-single-partner"><img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/reliance.jpg" alt=""></a></li>
+				<li><a href="#" class="full-round fundpress-single-partner"><img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/ishares.jpg" alt=""></a></li>
+				<li><a href="#" class="full-round fundpress-single-partner"><img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/spdr.png" alt=""></a></li>
 			</ul><!-- .fundpress-partners END -->
 		</div>
 	</div>
