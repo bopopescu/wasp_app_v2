@@ -1,4 +1,4 @@
-<!-- get_header('Page Name','Title')-->
+
 <!doctype html>
 <html class="no-js" lang="en">
 	<head>
@@ -7,34 +7,69 @@
 		<title>WASP </title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400%7CPoppins:200,400,500,600,700%7CPlayfair+Display:400,700i" rel="stylesheet">
+
 		<link rel="icon" type="image/png" href=""><!--favicon.co-->
 		<!-- Place favicon.ico in the root directory -->
 		<link rel="apple-touch-icon" href="apple-touch-icon.png">
         <script src="https://apis.google.com/js/platform.js" async defer></script>
         <meta name="google-signin-client_id" content="115190952528-rphtltdisor88ocd73094g0v1gpbi4kl.apps.googleusercontent.com">
 
-		<!--<link rel="stylesheet" href="{{url_for('static', filename='css/iconfont.css') }}">
-		<link rel="stylesheet" href="{{url_for('static', filename='css/font-awesome.min.css') }}">
-		<link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css') }}">
+		<!--<link rel="stylesheet" href="{{url_for('static', filename='css/font-awesome.min.css') }}">
 		<link rel="stylesheet" href="{{url_for('static', filename='css/isotope.css') }}">
 		<link rel="stylesheet" href="{{url_for('static', filename='css/magnific-popup.css') }}">
-		<link rel="stylesheet" href="{{url_for('static', filename='css/owl.carousel.min.css') }}">
-		<link rel="stylesheet" href="{{url_for('static', filename='css/owl.theme.default.min.css') }}">
 		<link rel="stylesheet" href="{{url_for('static', filename='css/woocommerce.css') }}">
 		<link rel="stylesheet" href="{{url_for('static', filename='css/plugins.css') }}">
+		<link rel="stylesheet" href="{{url_for('static', filename='css/iconfont.css') }}">
+
+		<link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css') }}">
+		<link rel="stylesheet" href="{{url_for('static', filename='css/owl.carousel.min.css') }}">
+		<link rel="stylesheet" href="{{url_for('static', filename='css/owl.theme.default.min.css') }}">
 		<link rel="stylesheet" href="{{url_for('static', filename='css/style.css') }}">
 		<link rel="stylesheet" href="{{url_for('static', filename='css/responsive.css') }}">-->
+
 		{% assets "main_css" %}
 		<link href="{{ ASSET_URL }}" rel="stylesheet">
 		{% endassets %}
-		<script type="text/javascript" src="{{url_for('static', filename='js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') }}"></script>
+
+		<link rel='stylesheet' id='videojs-css'  href='https://s3-ap-southeast-1.amazonaws.com/wasp-images/comingsoon/vendor.css' type='text/css' media='all'/>
+		<link rel='stylesheet' id='sc_retail-style-css'  href='https://s3-ap-southeast-1.amazonaws.com/wasp-images/comingsoon/stylemin.css' type='text/css' media='all'/>
+		<script type='text/javascript' src='https://s3-ap-southeast-1.amazonaws.com/wasp-images/comingsoon/jquery.min.js'></script>
+		<script type='text/javascript' src='https://s3-ap-southeast-1.amazonaws.com/wasp-images/comingsoon/utils.min.js'></script>
+		<script type='text/javascript' src='https://s3-ap-southeast-1.amazonaws.com/wasp-images/comingsoon/head.min.js'></script>
+<style>
+.c-button-cursor {
+    cursor: default!important;
+}
+
+.m-meganav .meganav-menu .meganav-tab.is-location::after {
+    background-color: transparent!important;
+}
+
+.meganav-logo-wasp {
+    display: table-cell;
+    width: 180px;
+    padding-right: 22px;
+    text-align: right;
+    vertical-align: middle;
+    padding-top: 22px;
+
+}
+
+.meganav-menu,
+.meganav-menu div,
+.meganav-logo {
+    font-size: 100%;
+}
+
+.m-meganav.final .meganav-contents .responsive-bricklist .block-item {
+    height: 70px;
+}
+</style>
 	</head>
-	<body class="woocommerce">
+	<section class="woocommerce">
 		<!--[if lt IE 10]>
 			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
-		
 		<div id="preloader">
 			<div class="spinner">
 				<div class="double-bounce1"></div>
@@ -43,7 +78,7 @@
 		</div><!-- #preloader -->
 <!-- home section -->
 <!-- header version inner menu -->
-<header class="xs-header-height xs-menu-style-transparent xs-menu-style-border fundpress-header-main-version color-navy-blue v3">
+<header class="xs-header-height xs-menu-style-solid fundpress-header-main-version xs-navy-blue v3">
 	<div class="container">
 		<nav class="xs-menus fundpress-menu">
 			<div class="nav-header">
@@ -54,15 +89,14 @@
 			</div><!-- . END -->
 			<div class="nav-menus-wrapper">
 				<div class="xs-logo-wraper">
-					<a class="nav-brand xs-logo " href="{{ url_for('authentication.coming_soon_page') }}">
-						<img src="{{ url_for('static', filename='images/logo_1.svg') }}" alt="">
-					</a>
+					 <img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/logo-1.png"class="meganav-logo-wasp" >
+					<!--<a class="nav-brand xs-logo" href="{{ url_for('authentication.coming_soon_page') }}">
+						<img src="{{ url_for('static', filename='images/logo.png') }}" alt="">
+					</a>-->
 				</div>
 				<ul class="nav-menu">
 					<li><a href="{{ url_for('authentication.coming_soon_page') }}">Home</a>
 					</li>
-					<!--<li><a href="{{ url_for('about_us.about')}}">about</a></li>
-					<li><a href="#">contact</a></li>-->
 				</ul>
                 <div class="xs-navs-button" disabled>
 					<ul class="xm-icon-with-text fundpress-icon-menu">
@@ -77,47 +111,333 @@
 <!-- header version inner menu closed -->
 
 <!-- welcome section -->
-<!--<section class="xs-screen-height xs-welcome-section xm-bg fundpress-welcome-section">
+<section class="xs-screen-height xs-welcome-section xm-bg fundpress-welcome-section" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url({{ url_for('static', filename='images/pigidea.jpeg') }}); position:relative; height:-100%; overflow: hidden; background-size: cover;background-repeat: no-repeat;">
 	<div class="xs-banner-slider owl-carousel">
-	</div>
-</section><!-- End welcome section -->
-		<div id="coming_soon"class="xs-banner-slider-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url({{ url_for('static', filename='images/bbg_1.jpg') }}); position:relative; height:-100%; overflow: hidden; background-size: cover;background-repeat: no-repeat;">
-			<div class="container" >
+		<div id="first_banner" class="xs-banner-slider-item">
+				<div class="container" >
 				<div class="row ">
 					<div class="col-lg-12 center-block">
-						<div class="xs-welcome-content version-3">
+						<div class=" xs-welcome-content version-3">
 							<div class="xs-welcome-wraper ">
 								<div class="mt-5"></div>
-								<h2 style="text-align:center;">Investing should not be expensive, subscribe now!</h2>
-								<p style="text-align:center; color:white;">WASP is a platform that lowers the entry barrier of high return-investment through crowdfunding.</p>
-								<p style="text-align:center; color:white;">RM500 OR RM1000, every single amount is able to fit into our high-entry funds.</p>
+								<h2 class="title"style="color:white; text-align:center;">Investing should never be expensive</h2>
+								<p style="text-align:center; color:white;">WASP is a platform that lowers the entry barrier of high return-investment.</p>
+                                <p style="text-align:center; color:white">Grow your wealth and built your dream portfolio with WASP Bond Investment</p>
+								<p style="text-align:center; color:white;">RM100 OR RM500, every single amount is able to fit into our high-entry funds.</p>
 								<h3 style="text-align:center; color:white;">Coming in </h3>
 								<div class="fundpress-event-details text-center">
-								<div style="text-align:center; color:blue; font-size:20px; font-weight:bold;"class=" countdown-container xs-countdown-timer" data-countdown="2019/01/20"></div>
+								<!--<div style="text-align:center; color:blue; font-size:20px; font-weight:bold;"class=" countdown-container xs-countdown-timer" data-countdown="2019/02/10"></div>-->
 									</div>
 								<div class="mt-5"></div>
-								<h4 style="text-align:center; color:white;">SUBSCRIBE TO OUR NEWSLETTER</h4>
+								<h4 style="text-align:center; color:white;">SUBSCRIBE NOW</h4>
 								<form method="POST" id="subscribe-form">
 								<div class="xs-input-group-v2">
                     				<input type="email" name="email" id="the_email_sub" class=" col-lg-4 xs-input-control" placeholder="Your Email" required>
 								</div>
 								<div class="xs-submit-wraper xs-mb-20">
 									<div id="successnewsletterAlert" class="alert alert-success" role="alert"style="display:none;"></div>
-									<input type="submit" name="submit" id="subscribed" class="xs-btn round-btn green-btn">
+									<input type="submit" name="submit" id="subscribed" class="xs-btn round-btn green-btn ">
 								</div>
 									</form>
-							</div><!-- .xs-welcome-wraper END -->
-						</div><!-- .xs-welcome-content END -->
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+			</div>
+				<div id="second_banner" class="xs-banner-slider-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ url_for('static', filename='images/comingsoon//bg_2.jpeg') }}); position:relative; height:-100%; overflow: hidden; background-size: cover;background-repeat: no-repeat;">
+				<div class="container" >
+				<div class="row ">
+					<div class="col-lg-12 center-block">
+						<div class=" xs-welcome-content version-3">
+							<div class="xs-welcome-wraper ">
+								<div class="mt-5"></div>
+								<h2 class="title"style="color:white; text-align:center;">This is the second banner!</h2>
+								<p style="text-align:center; color:white;">WASP is a platform that lowers the entry barrier of high return-investment.</p>
+                                <p style="text-align:center; color:white">Grow your wealth and diversify your portfolio with WASP Bond Investment</p>
+								<p style="text-align:center; color:white;">RM500 OR RM1000, every single amount is able to fit into our high-entry funds.</p>
+								<h3 style="text-align:center; color:white;">Coming in </h3>
+								<div class="fundpress-event-details text-center">
+								<div style="text-align:center; color:blue; font-size:20px; font-weight:bold;"class=" countdown-container xs-countdown-timer" data-countdown="2019/02/10"></div>
+									</div>
+								<div class="mt-5"></div>
+								<h4 style="text-align:center; color:white;">SUBSCRIBE TO OUR NEWSLETTER</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+	</div>
+</section ><!-- End welcome section -->
+<section>
+<div class="m-benefits-slider" id="sc-lb-module-product-features" data-post-status="publish-status" data-post-status-label="Published">
+	<div class="content-wrapper">
+							<div class="header">
+								<h3 class="message is-title">Why Invest in Bond?</h3>
+							</div>
+						<div class="list" role="list">
+							<div class="item no-link" id="product-feature-1"  role="listitem">
+										<div class="content">
+											<div class="icon">
+											<img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/w_1.png" alt="">
+											</div>
+						<h4 class="title"><a title="Low Risk" data-context="Product Features title">Low Risk</a></h4>
+						<div class="message"><p><span>Hedging your risk through the purchase of Government and Corporate Investment Grade bonds.</span></p>
+						</div></div>
+							</div>
+							<div class="item no-link" id="product-feature-2"  role="listitem">
+								<div class="content">
+									<div class="icon">
+											<img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/w_2.png" alt="">
+											</div>
+									<h4 class="title">
+										<a title="Consistent Payout" data-context="Product Features title">Consistent Payout </a>
+									</h4>
+									<div class="message"><p>Enjoy regular payout that is given out on a annual or semi annual basis.</p>
+									</div>
+								</div>
+							</div>
+							<div class="item hover-icon-with-gradient-blue-to-green" id="product-feature-3"  role="listitem">
 
-<!-- square service -->
-<section  class="xs-navy-blue-bg fundpress-square-service-section v3">
+								<div class="content">
+									<div class="icon">
+											<img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/w_3.png" alt="">
+											</div>
+									<h4 class="title">
+										<a title="Market Views on-the-go" data-context="Product Features title">Capital Appreciation</a>
+									</h4>
+									<div class="message"><p>Bonds allows significant opportunity for capital appreciation while maintaining cash payouts.</p>
+									</div>
+								</div>
+							</div>
+							<div class="item no-link" id="product-feature-4"  role="listitem">
+
+								<div class="content">
+									<div class="icon">
+											<img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/w_4.png" alt="">
+											</div>
+									<h4 class="title">
+										<a title="Easy ways to manage your investments" data-context="Product Features title">Diversification of Portfolio</a>
+									</h4>
+									<div class="message"><p>Portfolio that consist of higher risk investment classes can be balance out through investment with bond</p>
+									</div>
+								</div>
+							</div>
+						</div>
+	</div>
+</div>
+</section>
+<div class="m-tables" data-post-status="publish-status" data-post-status-label="Published">
+			<div class="content-wrapper">
+				<div class="header">
+				<h3 class="title">COMPARISON</h3>
+				</div>
+				<div class="content">
+			<table >
+				<thead>
+				<th ><div class="th-wrapper"></div></th>
+				<th ><div class="th-wrapper">Saving Account</div></th>
+				<th ><div class="th-wrapper">Fixed Deposit Account</div></th>
+				<th ><div class="th-wrapper">Corporate Bond</div></th>
+				</thead>
+				<tbody>
+				<tr>
+					<td ><b>Amount</b></td>
+					<td>RM 100,000</td>
+					<td>RM 100,000</td>
+					<td ><b>RM 100,000</b></td>
+				</tr>
+				<tr>
+					<td ><b>Interest Rate</b></td>
+					<td >0% - 2% p.a</td>
+					<td>2% - 4% p.a</td>
+					<td><b>4% - 8% p.a</b></td>
+				</tr>
+				<tr>
+					<td ><b>Potential Earnings</b></td>
+					<td>RM 0 - RM 2,000</td>
+					<td>RM 2,000 - RM 4,000</td>
+					<td><b>RM 4,000 - RM 8,000</b></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td class="text-center">
+					<img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/saving-money.png" alt="">
+					</td>
+					<td class="text-center">
+					<img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/account.png" alt="">
+					</td>
+					<td class="text-center">
+					<img src="{{ url_for('static', filename='images/logo_1.svg') }}" width="150" height="50"alt="">
+					</td>
+				</tr>
+				</tbody>
+			</table>
+				<div ><small>Disclaimer: The information above are for general information only.</small></div>
+				</div>
+	</div>
+	</div>
+		<section>
+			<div class="m-faqs" id="sc-lb-module-faq" data-post-status="publish-status" data-post-status-label="Published">
+	<div class="content-wrapper">
+
+					<div class="header">
+				<h3 class="title">FAQs</h3>
+			</div>
+						<div class="content">
+
+			<ul class="list">
+															<li class="item">
+							<label for="sc-lb-module-faq-0" class="item-wrapper">
+								<input id="sc-lb-module-faq-0"
+									name="sc-lb-module-faq-accordion"
+									type="checkbox"/>
+								<span class="question">
+									<span class="c-icon icon-tick" data-grunticon-embed></span>
+									<span class="question-text">What are the benefits of bonds?</span>
+									<span class="c-icon icon-varrow" data-grunticon-embed></span>
+								</span>
+								<div class="answer"><p><span><strong>Low-risk investment</strong><br />
+</span><span>This is especially true for government bonds and high-grade corporate bonds</span></p>
+<p><strong>Regular cash payout<br />
+</strong><span>Through coupon payments made annually, semi-annually or quarterly</span></p>
+<p><strong>Potentially higher interest rates<br />
+</strong><span>Compared to fixed deposit rates</span></p>
+<p><strong>Capital appreciation opportunity<br />
+</strong><span>In addition to regular cash payouts</span></p>
+<p><strong>Investment diversification<br />
+</strong><span>Balance out higher-risk asset classes in portfolio</span></p>
+</div>
+							</label>
+						</li>
+																				<li class="item">
+							<label for="sc-lb-module-faq-1" class="item-wrapper">
+								<input id="sc-lb-module-faq-1"
+									name="sc-lb-module-faq-accordion"
+									type="checkbox"/>
+								<span class="question">
+									<span class="c-icon icon-tick" data-grunticon-embed></span>
+									<span class="question-text">How can I invest in bonds through Standard Chartered?</span>
+									<span class="c-icon icon-varrow" data-grunticon-embed></span>
+								</span>
+								<div class="answer"><p><span>While our Investment Services have a variety of bond funds, we have gone even further and now offer you the opportunity to access different types of bonds in the market.</span></p>
+<p><span>Standard Chartered allows you the freedom to select the bonds of your choice from our comprehensive range offered, to help diversify your investment portfolio.</span></p>
+</div>
+							</label>
+						</li>
+																				<li class="item">
+							<label for="sc-lb-module-faq-2" class="item-wrapper">
+								<input id="sc-lb-module-faq-2"
+									name="sc-lb-module-faq-accordion"
+									type="checkbox"/>
+								<span class="question">
+									<span class="c-icon icon-tick" data-grunticon-embed></span>
+									<span class="question-text">What does buying a bond in the secondary market mean?</span>
+									<span class="c-icon icon-varrow" data-grunticon-embed></span>
+								</span>
+								<div class="answer"><p><span>Aside from purchasing new-issue bonds from the issuer, you can also purchase bonds that are already in the market. This is known as purchasing bonds from the secondary market. The price you will be required to pay would be the accrued interest on the bond as well as its market value.</span></p>
+<p><span>Example:<br />
+</span><span>Investor A buys a bond in the primary market with a face value of RM1,000 and a coupon of 5%. After 90 days, Investor A sells the bond to Investor B at the market price of RM950.</span></p>
+<p><span>Investor B would have to pay:<br />
+</span><span>Market value of bond + accrued interest of bond over 90 days<br />
+</span><span>= RM950 + (RM1,000 x 5% x 90/365)<br />
+</span><span>= RM950 + RM12.33<br />
+</span><span>= RM962.33 is the amount Investor B pays Investor A when he purchases the bond from the secondary market</span></p>
+</div>
+							</label>
+						</li>
+																				<li class="item">
+							<label for="sc-lb-module-faq-3" class="item-wrapper">
+								<input id="sc-lb-module-faq-3"
+									name="sc-lb-module-faq-accordion"
+									type="checkbox"/>
+								<span class="question">
+									<span class="c-icon icon-tick" data-grunticon-embed></span>
+									<span class="question-text">What types of bonds are on offer?</span>
+									<span class="c-icon icon-varrow" data-grunticon-embed></span>
+								</span>
+								<div class="answer"><p>&nbsp;</p>
+<table>
+<tbody>
+<tr>
+<td><span>Government securities</span></td>
+<td><span>They include Malaysian Government Securities (MGS) and Malaysian Treasury Bills issued by the Malaysian Government to raise funds</span></td>
+</tr>
+<tr>
+<td><span>Zero-coupon bonds</span></td>
+<td><span>These bonds do not have coupon payouts but are instead sold at a discounted value, with the face value payable at maturity date</span></td>
+</tr>
+<tr>
+<td><span>Corporate bonds</span></td>
+<td><span>These are debt securities issued by corporations and offer coupon payouts with a fixed maturity date</span></td>
+</tr>
+<tr>
+<td><span>Floating-rate notes</span></td>
+<td><span>These bonds have a variable coupon, usually dependent on a money market reference rate e.g. LIBOR (London Inter-Bank Offered Rate), plus a fixed spread</span></td>
+</tr>
+<tr>
+<td><span>Commercial papers</span></td>
+<td><span>These unsecured money market securities are usually short term in nature and issued by corporations with excellent debt ratings</span></td>
+</tr>
+<tr>
+<td><span>Certificate of deposit</span></td>
+<td><span>Issued by banks or financial institutions that is interest-bearing and short term in nature</span></td>
+</tr>
+<tr>
+<td><span>Subordinated bonds</span></td>
+<td><span>These typically offer a higher rate of return as they have lower priority compared to other bonds in the case of liquidation or bankruptcy of the corporation</span></td>
+</tr>
+<tr>
+<td><span>Convertible bonds</span></td>
+<td><span>This hybrid security has debt and equity-like features and can be converted into equity in the issuing company at an agreed upon price</span></td>
+</tr>
+<tr>
+<td><span>Islamic debt securities</span></td>
+<td><span>These debt securities are corporate bonds that are Syariah-compliant</span></td>
+</tr>
+<tr>
+<td><span>Inflation indexed /<br />
+</span><span>Protected securities</span></td>
+<td><span>The principal amounts of these bonds are indexed to inflation, thereby reducing the inflation risk of the investment</span></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+</div>
+							</label>
+						</li>
+																				<li class="item">
+							<label for="sc-lb-module-faq-4" class="item-wrapper">
+								<input id="sc-lb-module-faq-4"
+									name="sc-lb-module-faq-accordion"
+									type="checkbox"/>
+								<span class="question">
+									<span class="c-icon icon-tick" data-grunticon-embed></span>
+									<span class="question-text">What to look out for when choosing your bond?</span>
+									<span class="c-icon icon-varrow" data-grunticon-embed></span>
+								</span>
+								<div class="answer"><p><strong>Credit risk or default risk</strong><b><br />
+</b><span>You should select a bond that is issued by a credible issuer to ensure that full and timely repayments can be made to you. If the bond issuer is unable to make interest or principal payments when due, as per the bond agreement, the issuer is said to be in default, and the investors may not recover their full investment capital.</span></p>
+<p><strong>Interest rate risk</strong><b><br />
+</b><span>Bond prices have the tendency to move inversely with interest rates. This may have an effect on your investment, due to the rise and fall of the bond price, should you decide to sell the bond before its maturity.</span></p>
+<p><strong>Liquidity risk<br />
+</strong><span>Each and every bond comes with a maturity date. You will need to be prepared to hold the bond till maturity. However, should you need to liquidate your investment at short notice you may experience difficulty in finding a buyer and may therefore have to sell at an unfavourable price.</span></p>
+<p><strong>Currency risk</strong><b><br />
+</b><span>With global bonds, you need to be aware of your exposure to currency risk. This is the possibility that the value of the investment may be adversely affected by currency fluctuation movements through a devaluation of the base currency versus the reference currency, resulting in potential losses.</span></p>
+</div>
+							</label>
+						</li>
+												</ul>
+
+					</div>
+			</div>
+</div>
+		</section>
+<section  class="xs-gray-bg fundpress-square-service-section v3">
 	<div class="container">
 		<div class="fundpress-section-heading fundpress-heading-title fundpress-heading-title-v2 content-left">
-			<h2 class="color-white">Learning on investment? WASP makes it easier. </h2>
+			<h2 class="title">Learning on investment? WASP makes it easier. </h2>
 		</div><!-- .xs-heading-title .fundpress-heading-title-v2 .fundpress-heading-title END -->
 		<div class="row">
 			<div class="col-md-6 col-sm-12 col-lg-3">
@@ -159,84 +479,32 @@
 			<div class="xs-wave xs-wave_5"> </div>
 		</div>
 	</div>
-</section><!-- End square service -->
+</section>
 <!-- event section -->
-<section class="xs-bg fundpress-event-section xs-section-padding v3" style="">
-	<div class="container">
-		<div class="xs-section-heading row xs-margin-0">
-			<div class="fundpress-heading-title xs-padding-0 col-md-9 col-xl-9">
-				<h2 class="color-navy-blue">Upcoming Products</h2>
-				<span class="xs-separetor dashed-separetor fundpress-separetor"></span>
-				<p>This allows retail investor to make investment into accredited investor products while maintaing a very low cost.</p>
-			</div><!-- .xs-heading-title .fundpress-heading-title .xs-col-9 END -->
-			<!--<div class="xs-btn-wraper xs-padding-0 col-md-3 col-xl-3 d-flex-center-end">
-				<a href="events.html" class="xs-btn round-btn navy-blue-btn">Events</a>
-			</div><!-- .xs-btn-wraper .d-flex-center-end .xs-col-3 END -->
-		</div><!-- .xs-section-heading .fundpress-section-heading .xs-spilit-container END -->
-		<div class="fundpress-event-wraper">
-			<div class="fundpress-single-event-wraper row">
-				<div class="col-md-3">
-					<div class="fundpress-event-image">
-						<img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/bonds.jpg" alt="">
-					</div>
-				</div>
-				<div class="col-md-6 fundpress-event-details">
-					<h3 class="color-white xs-post-title fundpress-post-title">Financial BONDS.</h3>
-					<p>Accredited Investor and Cooperate Bonds are expensive, utilizing crowdfunding, we can enjoy the benefit of an accredited investor investment, while not having to fork out so much.</p>
-					<div class="countdown-container xs-countdown-timer" data-countdown="2019/01/20"></div>
-				</div>
-				<div class="col-md-3">
-					<div class="fundpress-btn-wraper">
-						<a href="#" class="xs-btn round-btn green-btn">subscribe</a>
-					</div>
-				</div>
-			</div><!-- .fundpress-single-event-wraper END -->
-			<div class="fundpress-single-event-wraper row">
-				<div class="col-md-3">
-					<div class="fundpress-event-image">
-						<img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/etf.png" alt="">
-					</div>
-				</div>
-				<div class="col-md-6 fundpress-event-details">
-					<h3 class="color-white xs-post-title fundpress-post-title">Curated ETFs</h3>
-					<p>ETFs has long been a pool of stocks/bonds that was carefully selected by a team of expert,
-						but what if our expertise select a pool of ETFs and you as an investor get to pick base on your
-						interest of the future technology such as TechFUND, BankETF, GreenEnergyETFs.</p>
-					<div class="countdown-container xs-countdown-timer" data-countdown="2019/01/20"></div>
-				</div>
-				<div class="col-md-3">
-					<div class="fundpress-btn-wraper">
-						<a href="#" class="xs-btn round-btn green-btn">subscribe</a>
-					</div>
-				</div>
-			</div><!-- .fundpress-single-event-wraper END -->
-		</div>
-	</div>
-</section><!-- End event section -->
-
 <!-- sponsor section -->
-<section class="xs-gray-bg xs-bg xs-section-padding fundpress-sponsor-section" style="">
+<!--<section class="xs-gray-bg xs-bg xs-section-padding fundpress-sponsor-section" style="">
 	<div class="xs-solid-overlay xs-bg-white"></div>
 	<div class="container fundpress-partners-wraper">
 		<div class="fundpress-heading-title">
 			<h2 class="color-navy-blue xs-mb-0">Featured Unique ETFs from Prominent Industry Leader apart from ours.</h2>
-		</div><!-- .xs-heading-title .fundpress-heading-title END -->
+		</div><!-- .xs-heading-title .fundpress-heading-title END ->
 		<div class="content-center">
 			<ul class="fundpress-partners">
 				<li><a href="#" class="full-round fundpress-single-partner"><img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/vanguard.png" alt=""></a></li>
 
 				<li><a href="#" class="full-round fundpress-single-partner"><img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/fidelity.png" alt=""></a></li>
-			</ul><!-- .fundpress-partners END -->
+			</ul><!-- .fundpress-partners END ->
 		</div>
 		<div class="content-center">
 			<ul class="fundpress-partners">
 				<li><a href="#" class="full-round fundpress-single-partner"><img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/reliance.jpg" alt=""></a></li>
 				<li><a href="#" class="full-round fundpress-single-partner"><img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/ishares.jpg" alt=""></a></li>
 				<li><a href="#" class="full-round fundpress-single-partner"><img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/spdr.png" alt=""></a></li>
-			</ul><!-- .fundpress-partners END -->
+			</ul><!-- .fundpress-partners END ->
 		</div>
 	</div>
-</section><!-- End sponsor section -->
+</section>-->
+		<!-- End sponsor section -->
 		<footer class="xs-footer-section fundpress-footer-section v3">
 			<div class="fundpress-footer-top-layer">
 				<div class="container">
@@ -304,24 +572,10 @@
 		<script type="text/javascript" src="{{url_for('static', filename='js/bootstrap.min.js') }}"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/js/bootstrap-formhelpers.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
-		<!--<script type="text/javascript" src="{{url_for('static',filename='js/functions/form.js') }}"></script>
-        <script type="text/javascript" src="{{url_for('static',filename='js/functions/facebook_login.js') }}"></script>
-		<script type="text/javascript" src="{{url_for('static', filename='js/plugins.js') }}"></script>
-
-		<script type="text/javascript" src="{{url_for('static', filename='js/isotope.pkgd.min.js') }}"></script>
-		<script type="text/javascript" src="{{url_for('static', filename='js/jquery.easing.1.3.js') }}"></script>
-		<script type="text/javascript" src="{{url_for('static', filename='js/jquery.countdown.min.js') }}"></script>
-		<script type="text/javascript" src="{{url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
-		<script type="text/javascript" src="{{url_for('static', filename='js/owl.carousel.min.js') }}"></script>
-		<script type="text/javascript" src="{{url_for('static', filename='js/parallax.min.js') }}"></script>
-		<script type="text/javascript" src="{{url_for('static', filename='js/jquery.easypiechart.min.js') }}"></script>
-		<script type="text/javascript" src="{{url_for('static', filename='js/spectragram.min.js') }}"></script>
-		<script type="text/javascript" src="{{url_for('static', filename='js/jquery.waypoints.min.js') }}"></script>
-		<script type="text/javascript" src="{{url_for('static', filename='js/scrollax.js') }}"></script>
-        <script type="text/javascript" src="{{url_for('static', filename='js/functions/load_campaign.js') }}"></script>
-		<script type="text/javascript" src="{{url_for('static', filename='js/main.js') }}"></script>-->
 	{% assets "main_js" %}
 		<script type="text/javascript" src="{{ ASSET_URL }}"></script>
 	{% endassets %}
+	<!--<script type='text/javascript' src='https://s3-ap-southeast-1.amazonaws.com/wasp-images/comingsoon/vendor.min.js'></script>-->
+
 	</body>
 </html>

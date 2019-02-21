@@ -1,8 +1,6 @@
-from flask import Blueprint,request,redirect,url_for,jsonify,render_template,flash
-from ..authentication.routes import login_required
+from flask import Blueprint,request,jsonify,render_template
 from ..database.model import update_list_item, update_prod_item,update_percentage,write_trans_item,get_transactions_receipt,update_invest_amount
 mod = Blueprint('payment',__name__)
-
 
 @mod.route('/execute',methods=['GET','POST'])
 def execute_payment():

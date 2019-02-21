@@ -2,7 +2,6 @@
 <div id="p_{{ product['receipt_no'] }}" class="xs-campaign-info-card">
     <div class="xs-dashboard-header">
         <h3 class="dashboard-title">{{ product['product_name'] }}<span>by {{ product['p_author'] }}</span><p>Receipt No: {{ product['receipt_no'] }}</p></h3>
-
         <div class="xs-btn-wraper">
             <!--<a href="#" class="btn btn-outline-success">Edit</a>-->
             <a id="{{ product['receipt_no'] }}" href="#" class="view-btn btn btn-outline-success">View Receipt</a>
@@ -10,11 +9,6 @@
     <div class="clearfix"></div>
     </div>
 	<div class="row">
-	<!--<div class="col-md-3">
-	<div class="xs-pie-chart-v3" data-percent="{{ product['p_percentage_funded'] }}">
-		<div class="pie-chart-info">
-            <div class="xs-pie-chart-percent"></div><span>%</span></div></div>
-    </div>-->
     <div class="col-md-5">
             <div class="xs-campaign-card card-primary">
                 <h6>Receipt No</h6>
@@ -39,8 +33,6 @@
             <h6>Day Left</h6>
 			</div>
 		</div>
-
-
 	</div>
 </div><!-- info card 1 -->
 {% endfor %}

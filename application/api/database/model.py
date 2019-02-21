@@ -6,7 +6,6 @@ import decimal
 def dynamodb_user_upload(attributes):
     the_dictionary = {}
     for item in attributes:
-        # print(item)
         the_dictionary[item['Name']] = item['Value']
     the_dictionary['portfolio']=[]
     the_dictionary['account_value']=0
@@ -26,11 +25,12 @@ def dynamodb_user_upload(attributes):
 
 @task
 def update_list_item(username,payment_id):
-    product_name =(payment_id[0]['item_list']['items'][0]['name'])
-    price        =(payment_id[0]['amount']['total'])
-    currency_type=(payment_id[0]['amount']['currency'])
-    sale_id      =(payment_id[0]['related_resources'][0]['sale']['id'])
-    payment_mode =payment_id[0]['related_resources'][0]['sale']['payment_mode']
+    product_name    = (payment_id[0]['item_list']['items'][0]['name'])
+    price           = (payment_id[0]['amount']['total'])
+    traded_price    = (payment_id[0]['item_list']['items'][0]['sku'])
+    currency_type   = (payment_id[0]['amount']['currency'])
+    sale_id         = (payment_id[0]['related_resources'][0]['sale']['id'])
+    payment_mode    = (payment_id[0]['related_resources'][0]['sale']['payment_mode'])
     #print(payment_id['transactions'])
     client = boto3.resource('dynamodb', region_name="ap-southeast-1")
     table = client.Table('wasp_account')
@@ -44,7 +44,8 @@ def update_list_item(username,payment_id):
                  "amount_purchase":price,
                 "payment_mode":payment_mode,
                 "currency":currency_type,
-                   "sales_id":sale_id}],
+                "transacted_price":traded_price,
+                   "sales_id":sale_id}]
         },
         )
 @task
@@ -54,7 +55,7 @@ def write_trans_item(username,transaction,infos):
     resp=table.put_item(
         Item={  "id"          : transaction[0]['related_resources'][0]['sale']['id'],
                 "product_name": transaction[0]['item_list']['items'][0]['name'],
-                "p_r_name"    : transaction[0]['item_list']['items'][0]['sku'],
+                "traded_price": transaction[0]['item_list']['items'][0]['sku'],
                 "total"       : transaction[0]['amount']['total'],
                 "created_time": transaction[0]['related_resources'][0]['sale']['create_time'],
                 "currency"    : transaction[0]['amount']['currency'],
