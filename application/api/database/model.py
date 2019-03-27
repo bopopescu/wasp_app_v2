@@ -2,6 +2,7 @@ import boto3
 from zappa.async import task
 import decimal
 
+
 @task
 def dynamodb_user_upload(attributes):
     the_dictionary = {}
@@ -167,7 +168,8 @@ def add_subscriber_list(email):
         table = client.Table('newsletter')
         table.put_item(
             Item={"email":email,
-                  "status":"new"}
+                  "status":"new",
+                  "sent":"new"}
         )
 
 

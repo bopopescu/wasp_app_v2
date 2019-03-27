@@ -59,21 +59,7 @@ $(document).ready(function() {
   $("#dob").keyup(checkdate);
 });
 
-$(document).ready(function(){
-    $('form#subscribe-form').on('submit',function(event){
-        $.ajax({
-            data: {
-                email: $('#the_email_sub').val()
-            },
-            type: "POST",
-            url: "/subscribe"
-        })
-        .done(function(data){
-                $('#successnewsletterAlert').text(data.success).show();
-        });
-        event.preventDefault();
-    });
-});
+
 function checkdate(){
     var the_date = $("#dob").val().split('/');
     var year = the_date[2];

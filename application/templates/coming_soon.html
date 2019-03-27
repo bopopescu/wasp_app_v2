@@ -7,65 +7,175 @@
 		<title>WASP </title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+		<meta name="google-site-verification" content="WT_3khCVWE2mjr6dV8omC51FHRCxT2AckpPxL6WZzIo" />
 		<link rel="icon" type="image/png" href=""><!--favicon.co-->
 		<!-- Place favicon.ico in the root directory -->
 		<link rel="apple-touch-icon" href="apple-touch-icon.png">
         <script src="https://apis.google.com/js/platform.js" async defer></script>
         <meta name="google-signin-client_id" content="115190952528-rphtltdisor88ocd73094g0v1gpbi4kl.apps.googleusercontent.com">
-
-		<!--<link rel="stylesheet" href="{{url_for('static', filename='css/font-awesome.min.css') }}">
-		<link rel="stylesheet" href="{{url_for('static', filename='css/isotope.css') }}">
-		<link rel="stylesheet" href="{{url_for('static', filename='css/magnific-popup.css') }}">
-		<link rel="stylesheet" href="{{url_for('static', filename='css/woocommerce.css') }}">
-		<link rel="stylesheet" href="{{url_for('static', filename='css/plugins.css') }}">
-		<link rel="stylesheet" href="{{url_for('static', filename='css/iconfont.css') }}">
-
-		<link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css') }}">
-		<link rel="stylesheet" href="{{url_for('static', filename='css/owl.carousel.min.css') }}">
-		<link rel="stylesheet" href="{{url_for('static', filename='css/owl.theme.default.min.css') }}">
-		<link rel="stylesheet" href="{{url_for('static', filename='css/style.css') }}">
-		<link rel="stylesheet" href="{{url_for('static', filename='css/responsive.css') }}">-->
-
-		{% assets "main_css" %}
+		<meta name="google-site-verification" content="hMMUyc_q8eMDbBOiC0yuLL9fcDg3J1G7FshS9o04NII" />
+		<!-- Facebook Pixel Code -->
+<script defer>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '480749525449016');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=480749525449016&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+		<!--{% assets "coming_soonCSS" %}
 		<link href="{{ ASSET_URL }}" rel="stylesheet">
-		{% endassets %}
+		{% endassets %}-->
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+		<!--<link rel='stylesheet' id='videojs-css'  href='https://s3-ap-southeast-1.amazonaws.com/wasp-images/comingsoon/vendor.css' type='text/css' media='all'/>-->
+		<!--<link rel='stylesheet' id='sc_retail-style-css'  href='https://s3-ap-southeast-1.amazonaws.com/wasp-images/comingsoon/stylemin.css' type='text/css' media='all'/>-->
+		<!--<link rel="stylesheet" href="{{url_for('static', filename='css/comingsoon/comingsoonpage.css') }}">-->
+		<link rel="stylesheet" href="{{url_for('static', filename='gen/mainCSSComingSoon.css') }}">
+		<!--<link rel="stylesheet" href="{{url_for('static', filename='css/comingsoon/theCSSCM.css') }}">-->
 
-		<link rel='stylesheet' id='videojs-css'  href='https://s3-ap-southeast-1.amazonaws.com/wasp-images/comingsoon/vendor.css' type='text/css' media='all'/>
-		<link rel='stylesheet' id='sc_retail-style-css'  href='https://s3-ap-southeast-1.amazonaws.com/wasp-images/comingsoon/stylemin.css' type='text/css' media='all'/>
-		<script type='text/javascript' src='https://s3-ap-southeast-1.amazonaws.com/wasp-images/comingsoon/jquery.min.js'></script>
-		<script type='text/javascript' src='https://s3-ap-southeast-1.amazonaws.com/wasp-images/comingsoon/utils.min.js'></script>
-		<script type='text/javascript' src='https://s3-ap-southeast-1.amazonaws.com/wasp-images/comingsoon/head.min.js'></script>
+		    <!-- cdnjs -->
 <style>
-.c-button-cursor {
-    cursor: default!important;
-}
-
-.m-meganav .meganav-menu .meganav-tab.is-location::after {
-    background-color: transparent!important;
-}
-
 .meganav-logo-wasp {
     display: table-cell;
     width: 180px;
     padding-right: 22px;
     text-align: right;
     vertical-align: middle;
-    padding-top: 22px;
-
+    padding-top: 22px
+}
+.the-color-of-wasp {
+	  color: #247DBC;
 }
 
-.meganav-menu,
-.meganav-menu div,
-.meganav-logo {
-    font-size: 100%;
+/*.background-for-graph {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url({{ url_for('static', filename='images/gradient_1.jpg') }});
+	position:relative;
+	height:-100%;
+	overflow: hidden;
+	background-size: cover;
+	background-repeat: no-repeat;
+}*/
+.background-for-graph {
+    background-color: #000;
+    background-image: linear-gradient(to right, #4e54c8 , #8f94fb);
+    background-size: cover;
+    overflow: hidden;
+    height:-100%;
+    position:relative;
 }
 
-.m-meganav.final .meganav-contents .responsive-bricklist .block-item {
-    height: 70px;
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 50%;
+  background: #fff;
+  outline: none;
+  opacity: 0.8;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
 }
 </style>
+<style>
+.chart-container {
+  position: relative;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 50vh;
+  width: 55vw;
+}
+.first-background-image {
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	position:relative;
+	height:-100%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+.thebg-image {
+	width: 100wh;
+	height: -100%;
+	color: #fff;
+	position:relative;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 100%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+</style>
+
 	</head>
+	<body>
+
 	<section class="woocommerce">
 		<!--[if lt IE 10]>
 			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -76,20 +186,20 @@
 				<div class="double-bounce2"></div>
 			</div>
 		</div><!-- #preloader -->
-<!-- home section -->
+	</section><!-- home section -->
 <!-- header version inner menu -->
 <header class="xs-header-height xs-menu-style-solid fundpress-header-main-version xs-navy-blue v3">
 	<div class="container">
 		<nav class="xs-menus fundpress-menu">
 			<div class="nav-header">
 				<div class="nav-toggle"></div>
-				<a class="nav-brand nav-logo" href="index.html">
-					<img src="{{ url_for('static', filename='images/logo_1.svg') }}" alt="">
+				<a class="nav-brand nav-logo" href="">
+					<img  src="{{ url_for('static', filename='images/logo_1.svg') }}" alt="">
 				</a>
 			</div><!-- . END -->
 			<div class="nav-menus-wrapper">
 				<div class="xs-logo-wraper">
-					 <img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/logo-1.png"class="meganav-logo-wasp" >
+					 <img src="{{ url_for('static', filename='images/logo-3.png') }}" class="meganav-logo-wasp" >
 					<!--<a class="nav-brand xs-logo" href="{{ url_for('authentication.coming_soon_page') }}">
 						<img src="{{ url_for('static', filename='images/logo.png') }}" alt="">
 					</a>-->
@@ -107,71 +217,50 @@
 		</nav><!-- .xs-menus .fundpress-menu END -->
 	</div>
 </header>
-
 <!-- header version inner menu closed -->
 
 <!-- welcome section -->
-<section class="xs-screen-height xs-welcome-section xm-bg fundpress-welcome-section" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url({{ url_for('static', filename='images/pigidea.jpeg') }}); position:relative; height:-100%; overflow: hidden; background-size: cover;background-repeat: no-repeat;">
-	<div class="xs-banner-slider owl-carousel">
-		<div id="first_banner" class="xs-banner-slider-item">
+<section class="xs-screen-height xs-welcome-section fundpress-welcome-section thebg-image">
+	<div class="xs-banner-slider owl-carousel ">
+		<div id="first_banner" class="xs-banner-slider-item ">
 				<div class="container" >
-				<div class="row ">
-					<div class="col-lg-12 center-block">
+				<div class="row  ">
+					<div class="col-lg-12 ">
 						<div class=" xs-welcome-content version-3">
 							<div class="xs-welcome-wraper ">
-								<div class="mt-5"></div>
-								<h2 class="title"style="color:white; text-align:center;">Investing should never be expensive</h2>
-								<p style="text-align:center; color:white;">WASP is a platform that lowers the entry barrier of high return-investment.</p>
-                                <p style="text-align:center; color:white">Grow your wealth and built your dream portfolio with WASP Bond Investment</p>
-								<p style="text-align:center; color:white;">RM100 OR RM500, every single amount is able to fit into our high-entry funds.</p>
-								<h3 style="text-align:center; color:white;">Coming in </h3>
-								<div class="fundpress-event-details text-center">
-								<!--<div style="text-align:center; color:blue; font-size:20px; font-weight:bold;"class=" countdown-container xs-countdown-timer" data-countdown="2019/02/10"></div>-->
-									</div>
-								<div class="mt-5"></div>
-								<h4 style="text-align:center; color:white;">SUBSCRIBE NOW</h4>
+								<h2 class="title"style="font-size:32px; color:white; text-align:left;">Get fixed return from 5-7% p.a. on Corporate Bonds.<br></h2>
+								<h2 class="title"style="font-size:18px; color:white; text-align:left;"><br>Invest in your preferred corporate bonds or sukuk starting from RM100.<br> Get Notified when WASP is available.</h2>
+								<h2 style="font-size:17px; text-align:center; color:white;"></h2>
 								<form method="POST" id="subscribe-form">
+									<div class="row">
+										<div class="col-lg-8 ">
 								<div class="xs-input-group-v2">
-                    				<input type="email" name="email" id="the_email_sub" class=" col-lg-4 xs-input-control" placeholder="Your Email" required>
-								</div>
-								<div class="xs-submit-wraper xs-mb-20">
+                    				<input type="email" name="email" id="email_sub" class="xs-input-control" placeholder="Enter email" required>
+								</div></div>
+								<div class="xs-submit-wraper col-lg-2">
 									<div id="successnewsletterAlert" class="alert alert-success" role="alert"style="display:none;"></div>
-									<input type="submit" name="submit" id="subscribed" class="xs-btn round-btn green-btn ">
+									<input type="submit" name="submit" id="subscribed" value="GET EARLY ACCESS" class="xs-btn green-btn">
 								</div>
+									</div>
 									</form>
 							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			</div>
-				<div id="second_banner" class="xs-banner-slider-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ url_for('static', filename='images/comingsoon//bg_2.jpeg') }}); position:relative; height:-100%; overflow: hidden; background-size: cover;background-repeat: no-repeat;">
-				<div class="container" >
-				<div class="row ">
-					<div class="col-lg-12 center-block">
-						<div class=" xs-welcome-content version-3">
-							<div class="xs-welcome-wraper ">
-								<div class="mt-5"></div>
-								<h2 class="title"style="color:white; text-align:center;">This is the second banner!</h2>
-								<p style="text-align:center; color:white;">WASP is a platform that lowers the entry barrier of high return-investment.</p>
-                                <p style="text-align:center; color:white">Grow your wealth and diversify your portfolio with WASP Bond Investment</p>
-								<p style="text-align:center; color:white;">RM500 OR RM1000, every single amount is able to fit into our high-entry funds.</p>
-								<h3 style="text-align:center; color:white;">Coming in </h3>
-								<div class="fundpress-event-details text-center">
-								<div style="text-align:center; color:blue; font-size:20px; font-weight:bold;"class=" countdown-container xs-countdown-timer" data-countdown="2019/02/10"></div>
-									</div>
-								<div class="mt-5"></div>
-								<h4 style="text-align:center; color:white;">SUBSCRIBE TO OUR NEWSLETTER</h4>
+							<div class="col-lg-6">
+								<img class="pull-right lazy" data-src="{{ url_for('static', filename='images/comingsoon/firstcut.png') }}" alt=""/>
+
+								<a href="https://www.freepik.com/free-photos-vectors/business-card" style="font-size:1px;">Business vector created by pikisuperstar - www.freepik.com</a>
 							</div>
 						</div>
+
 					</div>
+
 				</div>
 			</div>
 			</div>
 	</div>
 </section ><!-- End welcome section -->
+
 <section>
-<div class="m-benefits-slider" id="sc-lb-module-product-features" data-post-status="publish-status" data-post-status-label="Published">
+<div class="m-benefits-slider" id="lb-module-product-features" data-post-status="publish-status" data-post-status-label="Published">
 	<div class="content-wrapper">
 							<div class="header">
 								<h3 class="message is-title">Why Invest in Bond?</h3>
@@ -180,21 +269,21 @@
 							<div class="item no-link" id="product-feature-1"  role="listitem">
 										<div class="content">
 											<div class="icon">
-											<img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/w_1.png" alt="">
+											<img class="lazy" data-src="{{ url_for('static', filename='images/comingsoon/w_1.png') }}" alt="">
 											</div>
 						<h4 class="title"><a title="Low Risk" data-context="Product Features title">Low Risk</a></h4>
-						<div class="message"><p><span>Hedging your risk through the purchase of Government and Corporate Investment Grade bonds.</span></p>
+						<div class="message"><p><span>Hedging your risk through the purchase of Government and Corporate high-rating bonds.</span></p>
 						</div></div>
 							</div>
 							<div class="item no-link" id="product-feature-2"  role="listitem">
 								<div class="content">
 									<div class="icon">
-											<img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/w_2.png" alt="">
+											<img class="lazy" data-src="{{ url_for('static', filename='images/comingsoon/w_2.png') }}" alt="">
 											</div>
 									<h4 class="title">
 										<a title="Consistent Payout" data-context="Product Features title">Consistent Payout </a>
 									</h4>
-									<div class="message"><p>Enjoy regular payout that is given out on a annual or semi annual basis.</p>
+									<div class="message"><p>Benefit from regular payout that is given out on an annual or semi annual basis.</p>
 									</div>
 								</div>
 							</div>
@@ -202,25 +291,24 @@
 
 								<div class="content">
 									<div class="icon">
-											<img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/w_3.png" alt="">
+											<img  class="lazy" data-src="{{ url_for('static', filename='images/comingsoon/w_3.png') }}" alt="">
 											</div>
 									<h4 class="title">
 										<a title="Market Views on-the-go" data-context="Product Features title">Capital Appreciation</a>
 									</h4>
-									<div class="message"><p>Bonds allows significant opportunity for capital appreciation while maintaining cash payouts.</p>
+									<div class="message"><p>Bonds provides significant opportunity for capital appreciation while maintaining cash payouts.</p>
 									</div>
 								</div>
 							</div>
 							<div class="item no-link" id="product-feature-4"  role="listitem">
-
 								<div class="content">
 									<div class="icon">
-											<img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/w_4.png" alt="">
+											<img  class="lazy" data-src="{{ url_for('static', filename='images/comingsoon/w_4.png') }}" alt="">
 											</div>
 									<h4 class="title">
 										<a title="Easy ways to manage your investments" data-context="Product Features title">Diversification of Portfolio</a>
 									</h4>
-									<div class="message"><p>Portfolio that consist of higher risk investment classes can be balance out through investment with bond</p>
+									<div class="message"><p>Portfolio that consist of higher risk investment classes can be balanced out through investment with bond</p>
 									</div>
 								</div>
 							</div>
@@ -228,257 +316,183 @@
 	</div>
 </div>
 </section>
+    	<section class="xs-screen-height background-for-graph">
+		<h3 class="title font-weight-bold mt-30 mb-10" style="margin-top:20px; font-size:32px; color:white; text-align:center;">Potential Earnings Calculation<br>RM<label id="amountGet">7903</label> in Total (30 years)</h3>
+		<div class="container">
+			<div class="col-lg-12 mt-10">
+				<div class="col-lg-6 mb-5 mt-5">
+				<h3 class="title font-weight-bold" style="font-size:21px; color:white;">Potential earnings of corporate bonds</h3>
+					<h3 class="title" style="font-size:21px; color:white;">Based on <u>6</u> % p.a average fixed-return rate on corporate bond and 30 years return.</h3>
+					</div>
+				<div class="col-lg-4">
+					<h3 class="title font-weight-bold" style="font-size:20px; color:white; text-align:left;">Invest amount: RM<label id="theBudgetRange">100</label> / year</h3>
+			  	    <input type="range" min="1" max="100" value="1" class="form-control-range" id="mybudgetRange">
+					</div>
+			</div>
+            <div class="chart-container">
+			<canvas id="canvas"></canvas>
+                </div>
+            </div>
+	</section>
+
+	<!-- Requires style.min.2.css to work for these code
+	<section class="xs-screen-height">
 <div class="m-tables" data-post-status="publish-status" data-post-status-label="Published">
 			<div class="content-wrapper">
 				<div class="header">
 				<h3 class="title">COMPARISON</h3>
 				</div>
 				<div class="content">
+					<div class="table-wrapper">
 			<table >
 				<thead>
 				<th ><div class="th-wrapper"></div></th>
-				<th ><div class="th-wrapper">Saving Account</div></th>
-				<th ><div class="th-wrapper">Fixed Deposit Account</div></th>
-				<th ><div class="th-wrapper">Corporate Bond</div></th>
+				<th ><div class=" text-center th-wrapper">Saving Account</div></th>
+				<th ><div class=" text-center th-wrapper">Fixed Deposit Account</div></th>
+				<th ><div class="text-center th-wrapper">Corporate Bond</div></th>
 				</thead>
 				<tbody>
 				<tr>
-					<td ><b>Amount</b></td>
-					<td>RM 100,000</td>
-					<td>RM 100,000</td>
-					<td ><b>RM 100,000</b></td>
+					<td class="text-left" ><b>Amount</b></td>
+					<td class="text-center">RM 100,000</td>
+					<td class="text-center">RM 100,000</td>
+					<td class="text-center"><b>RM 100,000</b></td>
 				</tr>
 				<tr>
-					<td ><b>Interest Rate</b></td>
-					<td >0% - 2% p.a</td>
-					<td>2% - 4% p.a</td>
-					<td><b>4% - 8% p.a</b></td>
+					<td class="text-left"><b>Interest Rate</b></td>
+					<td class="text-center">0% - 2% p.a</td>
+					<td class="text-center">2% - 4% p.a</td>
+					<td class="text-center"><b>5% - 7% p.a</b></td>
 				</tr>
 				<tr>
-					<td ><b>Potential Earnings</b></td>
-					<td>RM 0 - RM 2,000</td>
-					<td>RM 2,000 - RM 4,000</td>
-					<td><b>RM 4,000 - RM 8,000</b></td>
+					<td class="text-left"><b>Potential Return</b></td>
+					<td class="text-center">RM 0 - RM 2,000</td>
+					<td class="text-center">RM 2,000 - RM 4,000</td>
+					<td class="text-center"><b>RM 5,000 - RM 7,000</b></td>
 				</tr>
-				<tr>
-					<td></td>
-					<td class="text-center">
-					<img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/saving-money.png" alt="">
-					</td>
-					<td class="text-center">
-					<img src="https://s3-ap-southeast-1.amazonaws.com/wasp-images/account.png" alt="">
-					</td>
-					<td class="text-center">
-					<img src="{{ url_for('static', filename='images/logo_1.svg') }}" width="150" height="50"alt="">
-					</td>
-				</tr>
+
 				</tbody>
-			</table>
+			</table></div>
 				<div ><small>Disclaimer: The information above are for general information only.</small></div>
 				</div>
 	</div>
 	</div>
-		<section>
-			<div class="m-faqs" id="sc-lb-module-faq" data-post-status="publish-status" data-post-status-label="Published">
-	<div class="content-wrapper">
-
-					<div class="header">
+</section>-->
+<section>
+	<div class="m-faqs" id="lb-module-faq" data-post-status="publish-status" data-post-status-label="Published">
+		<div class="content-wrapper">
+			<div class="header">
 				<h3 class="title">FAQs</h3>
 			</div>
-						<div class="content">
-
-			<ul class="list">
-															<li class="item">
-							<label for="sc-lb-module-faq-0" class="item-wrapper">
-								<input id="sc-lb-module-faq-0"
-									name="sc-lb-module-faq-accordion"
-									type="checkbox"/>
-								<span class="question">
-									<span class="c-icon icon-tick" data-grunticon-embed></span>
-									<span class="question-text">What are the benefits of bonds?</span>
-									<span class="c-icon icon-varrow" data-grunticon-embed></span>
-								</span>
-								<div class="answer"><p><span><strong>Low-risk investment</strong><br />
-</span><span>This is especially true for government bonds and high-grade corporate bonds</span></p>
-<p><strong>Regular cash payout<br />
-</strong><span>Through coupon payments made annually, semi-annually or quarterly</span></p>
-<p><strong>Potentially higher interest rates<br />
-</strong><span>Compared to fixed deposit rates</span></p>
-<p><strong>Capital appreciation opportunity<br />
-</strong><span>In addition to regular cash payouts</span></p>
-<p><strong>Investment diversification<br />
-</strong><span>Balance out higher-risk asset classes in portfolio</span></p>
-</div>
-							</label>
-						</li>
-																				<li class="item">
-							<label for="sc-lb-module-faq-1" class="item-wrapper">
-								<input id="sc-lb-module-faq-1"
-									name="sc-lb-module-faq-accordion"
-									type="checkbox"/>
-								<span class="question">
-									<span class="c-icon icon-tick" data-grunticon-embed></span>
-									<span class="question-text">How can I invest in bonds through Standard Chartered?</span>
-									<span class="c-icon icon-varrow" data-grunticon-embed></span>
-								</span>
-								<div class="answer"><p><span>While our Investment Services have a variety of bond funds, we have gone even further and now offer you the opportunity to access different types of bonds in the market.</span></p>
-<p><span>Standard Chartered allows you the freedom to select the bonds of your choice from our comprehensive range offered, to help diversify your investment portfolio.</span></p>
-</div>
-							</label>
-						</li>
-																				<li class="item">
-							<label for="sc-lb-module-faq-2" class="item-wrapper">
-								<input id="sc-lb-module-faq-2"
-									name="sc-lb-module-faq-accordion"
-									type="checkbox"/>
-								<span class="question">
-									<span class="c-icon icon-tick" data-grunticon-embed></span>
-									<span class="question-text">What does buying a bond in the secondary market mean?</span>
-									<span class="c-icon icon-varrow" data-grunticon-embed></span>
-								</span>
-								<div class="answer"><p><span>Aside from purchasing new-issue bonds from the issuer, you can also purchase bonds that are already in the market. This is known as purchasing bonds from the secondary market. The price you will be required to pay would be the accrued interest on the bond as well as its market value.</span></p>
-<p><span>Example:<br />
-</span><span>Investor A buys a bond in the primary market with a face value of RM1,000 and a coupon of 5%. After 90 days, Investor A sells the bond to Investor B at the market price of RM950.</span></p>
-<p><span>Investor B would have to pay:<br />
-</span><span>Market value of bond + accrued interest of bond over 90 days<br />
-</span><span>= RM950 + (RM1,000 x 5% x 90/365)<br />
-</span><span>= RM950 + RM12.33<br />
-</span><span>= RM962.33 is the amount Investor B pays Investor A when he purchases the bond from the secondary market</span></p>
-</div>
-							</label>
-						</li>
-																				<li class="item">
-							<label for="sc-lb-module-faq-3" class="item-wrapper">
-								<input id="sc-lb-module-faq-3"
-									name="sc-lb-module-faq-accordion"
-									type="checkbox"/>
-								<span class="question">
-									<span class="c-icon icon-tick" data-grunticon-embed></span>
-									<span class="question-text">What types of bonds are on offer?</span>
-									<span class="c-icon icon-varrow" data-grunticon-embed></span>
-								</span>
-								<div class="answer"><p>&nbsp;</p>
-<table>
-<tbody>
-<tr>
-<td><span>Government securities</span></td>
-<td><span>They include Malaysian Government Securities (MGS) and Malaysian Treasury Bills issued by the Malaysian Government to raise funds</span></td>
-</tr>
-<tr>
-<td><span>Zero-coupon bonds</span></td>
-<td><span>These bonds do not have coupon payouts but are instead sold at a discounted value, with the face value payable at maturity date</span></td>
-</tr>
-<tr>
-<td><span>Corporate bonds</span></td>
-<td><span>These are debt securities issued by corporations and offer coupon payouts with a fixed maturity date</span></td>
-</tr>
-<tr>
-<td><span>Floating-rate notes</span></td>
-<td><span>These bonds have a variable coupon, usually dependent on a money market reference rate e.g. LIBOR (London Inter-Bank Offered Rate), plus a fixed spread</span></td>
-</tr>
-<tr>
-<td><span>Commercial papers</span></td>
-<td><span>These unsecured money market securities are usually short term in nature and issued by corporations with excellent debt ratings</span></td>
-</tr>
-<tr>
-<td><span>Certificate of deposit</span></td>
-<td><span>Issued by banks or financial institutions that is interest-bearing and short term in nature</span></td>
-</tr>
-<tr>
-<td><span>Subordinated bonds</span></td>
-<td><span>These typically offer a higher rate of return as they have lower priority compared to other bonds in the case of liquidation or bankruptcy of the corporation</span></td>
-</tr>
-<tr>
-<td><span>Convertible bonds</span></td>
-<td><span>This hybrid security has debt and equity-like features and can be converted into equity in the issuing company at an agreed upon price</span></td>
-</tr>
-<tr>
-<td><span>Islamic debt securities</span></td>
-<td><span>These debt securities are corporate bonds that are Syariah-compliant</span></td>
-</tr>
-<tr>
-<td><span>Inflation indexed /<br />
-</span><span>Protected securities</span></td>
-<td><span>The principal amounts of these bonds are indexed to inflation, thereby reducing the inflation risk of the investment</span></td>
-</tr>
-</tbody>
-</table>
-<p>&nbsp;</p>
-</div>
-							</label>
-						</li>
-																				<li class="item">
-							<label for="sc-lb-module-faq-4" class="item-wrapper">
-								<input id="sc-lb-module-faq-4"
-									name="sc-lb-module-faq-accordion"
-									type="checkbox"/>
+			<div class="content">
+				<ul class="list">
+					<li class="item">
+						<label for="lb-module-faq-1" class="item-wrapper">
+							<input id="lb-module-faq-1" name="lb-module-faq-accordion" type="checkbox"/>
+							<span class="question">
+								<span class="c-icon icon-tick" data-grunticon-embed></span>
+								<span class="question-text">How to invest with WASP?</span>
+								<span class="c-icon icon-varrow" data-grunticon-embed></span>
+							</span>
+							<div class="answer"><p><span>While we have a variety of bond funds, we have gone even further and now offer you the opportunity to access different types of bonds in the market.</span></p>
+								<p><span>At WASP, we allow you the freedom to select bonds of your choice from our curated range offered, to help diversify your investment portfolio.</span></p>
+							</div>
+						</label>
+					</li>
+					<li class="item">
+						<label for="lb-module-faq-2" class="item-wrapper">
+							<input id="lb-module-faq-2" name="lb-module-faq-accordion" type="checkbox"/>
+							<span class="question">
+								<span class="c-icon icon-tick" data-grunticon-embed></span>
+								<span class="question-text">What does buying a bond in the secondary market mean?</span>
+								<span class="c-icon icon-varrow" data-grunticon-embed></span>
+							</span>
+							<div class="answer"><p><span>Apart from purchasing newly-issued bonds from the issuer(investment-bank), you can also purchase bonds that exist in the secondary market. This is known as purchasing bonds from the secondary market. The price that you required to pay would be the accrued(total) interest on the bond as well as its market value.</span></p>
+								<p><span>Example:<br />
+								</span><span>"A" buys a bond in the primary market with a face value of RM1,000 and a coupon of 6%. After 120 days, "A" sells the bond to "B" at the market price of RM950.</span></p>
+								<p><span> "B" would have to pay:<br />
+								</span><span>Market value of bond + accrued interest of bond over 90 days<br />
+								</span><span>= RM950 + (RM1,000 x 6% x 120/365)<br />
+								</span><span>= RM950 + RM19.73<br />
+								</span><span>= RM969.73 is the amount "B" pays "A" when he purchases the bond from the secondary market</span></p>
+							</div>
+						</label>
+					</li>
+					<li class="item">
+						<label for="sc-lb-module-faq-4" class="item-wrapper">
+							<input id="sc-lb-module-faq-4" name="sc-lb-module-faq-accordion" type="checkbox"/>
 								<span class="question">
 									<span class="c-icon icon-tick" data-grunticon-embed></span>
 									<span class="question-text">What to look out for when choosing your bond?</span>
 									<span class="c-icon icon-varrow" data-grunticon-embed></span>
 								</span>
-								<div class="answer"><p><strong>Credit risk or default risk</strong><b><br />
-</b><span>You should select a bond that is issued by a credible issuer to ensure that full and timely repayments can be made to you. If the bond issuer is unable to make interest or principal payments when due, as per the bond agreement, the issuer is said to be in default, and the investors may not recover their full investment capital.</span></p>
-<p><strong>Interest rate risk</strong><b><br />
-</b><span>Bond prices have the tendency to move inversely with interest rates. This may have an effect on your investment, due to the rise and fall of the bond price, should you decide to sell the bond before its maturity.</span></p>
-<p><strong>Liquidity risk<br />
-</strong><span>Each and every bond comes with a maturity date. You will need to be prepared to hold the bond till maturity. However, should you need to liquidate your investment at short notice you may experience difficulty in finding a buyer and may therefore have to sell at an unfavourable price.</span></p>
-<p><strong>Currency risk</strong><b><br />
-</b><span>With global bonds, you need to be aware of your exposure to currency risk. This is the possibility that the value of the investment may be adversely affected by currency fluctuation movements through a devaluation of the base currency versus the reference currency, resulting in potential losses.</span></p>
-</div>
-							</label>
-						</li>
-												</ul>
-
-					</div>
-			</div>
-</div>
-		</section>
-<section  class="xs-gray-bg fundpress-square-service-section v3">
-	<div class="container">
-		<div class="fundpress-section-heading fundpress-heading-title fundpress-heading-title-v2 content-left">
-			<h2 class="title">Learning on investment? WASP makes it easier. </h2>
-		</div><!-- .xs-heading-title .fundpress-heading-title-v2 .fundpress-heading-title END -->
-		<div class="row">
-			<div class="col-md-6 col-sm-12 col-lg-3">
-				<div class="fundpress-icon-with-square-service">
-					<img src="{{ url_for('static', filename='images/icon-1.png') }}" alt="">
-					<a href="#" class="color-white">Low Entry Barrier. </a>
-					<p>Start investing in minutes. No minimum requirements, plenty of choices.  </p>
-				</div><!-- .fundpress-icon-with-square-service END -->
-			</div>
-			<div class="col-md-6 col-sm-12 col-lg-3">
-				<div class="fundpress-icon-with-square-service">
-					<img src="{{ url_for('static', filename='images/icon-2.png') }}" alt="">
-					<a href="#" class="color-white">Low Entry Fees.</a>
-					<p>Join the millions on the investment of WASP curated products.</p>
-				</div><!-- .fundpress-icon-with-square-service END -->
-			</div>
-			<div class="col-md-6 col-sm-12 col-lg-3">
-				<div class="fundpress-icon-with-square-service">
-					<img src="{{ url_for('static', filename='images/icon-3.png') }}" alt="">
-					<a href="#" class="color-white">Expert Advice, 24/7.</a>
-					<p>Our team will answer your questions in 5 minutes, day or night.</p>
-				</div><!-- .fundpress-icon-with-square-service END -->
-			</div>
-			<div class="col-md-6 col-sm-12 col-lg-3">
-				<div class="fundpress-icon-with-square-service">
-					<img src="{{ url_for('static', filename='images/icon-4.png') }}" alt="">
-					<a href="#" class="color-white">Safety. Guaranteed.</a>
-					<p>WASP Guarantee protects your money and guarding it. </p>
-				</div><!-- .fundpress-icon-with-square-service END -->
+							<div class="answer"><p><strong>Credit risk or default risk</strong><b><br />
+							</b><span>A bond should be selected through a few criteria, first it must be issued by a credible issuer/investment bank to ensure that full and timely repayments can be made to you. If the bond issuer is unable to make interest or principal payments when due, as per the bond agreement, the issuer is said to be in default, and the investors may not recover their full investment capital.</span></p>
+								<p><strong>Interest rate risk</strong><b><br />
+								</b><span>Bond prices have the tendency to move inversely with interest rates. This may have an effect on your investment, due to the rise and fall of the bond price, you have to decide when to sell the bond before its maturity.</span></p>
+							</div>
+						</label>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
-	<div class="xs-shape-background">
-		<div class="xs-waves">
-			<div class="xs-wave xs-wave_1"> </div>
-			<div class="xs-wave xs-wave_2"> </div>
-			<div class="xs-wave xs-wave_3"> </div>
-			<div class="xs-wave xs-wave_4"> </div>
-			<div class="xs-wave xs-wave_5"> </div>
-		</div>
+</section>
+	<section>
+<div class="m-benefits-slider" id="lb-wasp-product-features" data-post-status="publish-status" data-post-status-label="Published">
+	<div class="content-wrapper">
+							<div class="header">
+								<h3 class="message is-title">Learning on investment? We make it easier.</h3>
+							</div>
+						<div class="list" role="list">
+							<div class="item no-link" id="wasp-feature-1"  role="listitem">
+										<div class="content">
+											<div class="icon">
+											<img src="" alt="">
+											</div>
+						<h4 class="title"><a title="Low Entry Barrier" data-context="Product Features title">Low Entry Barrier.</a></h4>
+						<div class="message"><p><span>Unlike traditional way of purchasing bond. We don't have a minimum investment of RM250,000 Start investing in minutes. No minimum requirements, plenty of choices.</span></p>
+						</div></div>
+							</div>
+							<div class="item no-link" id="wasp-feature-2"  role="listitem">
+								<div class="content">
+									<div class="icon">
+											<img src=""  alt="">
+											</div>
+									<h4 class="title">
+										<a title="Consistent Payout" data-context="Product Features title">Low Entry Fees.</a>
+									</h4>
+									<div class="message"><p>Join the millions on the investment of WASP curated products.</p>
+									</div>
+								</div>
+							</div>
+							<div class="item hover-icon-with-gradient-blue-to-green" id="wasp-feature-3"  role="listitem">
+								<div class="content">
+									<div class="icon">
+											<img src=""  alt="">
+											</div>
+									<h4 class="title">
+										<a title="Market Views on-the-go" data-context="Product Features title">Expert Advice, 24/7.</a>
+									</h4>
+									<div class="message"><p>Our team will answer your questions, big or small.</p>
+									</div>
+								</div>
+							</div>
+							<div class="item no-link" id="wasp-feature-4"  role="listitem">
+								<div class="content">
+									<div class="icon">
+											<img src="" alt="">
+											</div>
+									<h4 class="title">
+										<a title="Easy ways to manage your investments" data-context="Product Features title">Safety. Guaranteed.</a>
+									</h4>
+									<div class="message"><p>WASP Security Team protects your money with state-of-the art security feature.</p>
+									</div>
+								</div>
+							</div>
+						</div>
 	</div>
+</div>
 </section>
 <!-- event section -->
 <!-- sponsor section -->
@@ -517,65 +531,311 @@
 									</a>
 								</div>
 								<div class="fundpress-footer-content">
-									<p>WASP is an investment platform that lowers the threshold for high-entrance barrier investment.</p>
+									<p>WASP is a bond investment platform focuses on making Corporate Bonds available for everyone.</p>
+									<p>&copy; 2019 WASP VENTURE PLT<p>
 								</div><!-- . END -->
 								<ul class="xs-social-list fundpress-social-list">
-									<li><a href="" class="color-facebook full-round"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="" class="color-twitter full-round"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="https://www.facebook.com/waspfinance" class="color-facebook full-round"><i class="fa fa-facebook"></i></a></li>
+									<!--<li><a href="" class="color-twitter full-round"><i class="fa fa-twitter"></i></a></li>
 									<li><a href="" class="color-dribbble full-round"><i class="fa fa-dribbble"></i></a></li>
 									<li><a href="" class="color-pinterest full-round"><i class="fa fa-pinterest"></i></a></li>
-									<li><a href="" class="color-instagram full-round"><i class="fa fa-instagram"></i></a></li>
+									<li><a href="" class="color-instagram full-round"><i class="fa fa-instagram"></i></a></li>-->
 								</ul><!-- .xs-social-list .fundpress-social-list END -->
 							</div><!-- .fundpress-single-footer END -->
 						</div>
-						<div class="col-md-2">
+						<!--<div class="col-md-2">
 							<div class="fundpress-single-footer">
 								<div class="xs-footer-title">
 									<h4 class="color-white">About</h4>
-								</div><!-- .xs-footer-title END -->
+								</div>
 								<nav class="xs-footer-menu">
 									<ul>
-										<li><a href="about.html">About Us</a></li>
+										<li><a href="#">About Us</a></li>
 										<li><a href="#">How It Works</a></li>
 										<li><a href="#">Careers</a></li>
 										<li><a href="#">Press</a></li>
-										<li><a href="news-feed.html">Blog</a></li>
-										<li><a href="contact.html">Contact</a></li>
+										<li><a href="#">Blog</a></li>
+										<li><a href="#">Contact</a></li>
 									</ul>
-								</nav><!-- .xs-footer-menu .xs-block-menu END -->
-							</div><!-- .fundpress-single-footer END -->
+								</nav>
+							</div>
 						</div>
 						<div class="col-md-2">
 							<div class="fundpress-single-footer">
 								<div class="xs-footer-title">
 									<h4 class="color-white">Help</h4>
-								</div><!-- .xs-footer-title END -->
+								</div>
 								<nav class="xs-footer-menu">
 									<ul>
-										<li><a href="faq.html">FAQ</a></li>
+										<li><a href="#">FAQ</a></li>
 										<li><a href="#">Our Rules</a></li>
 										<li><a href="#">Trust & Safety</a></li>
 										<li><a href="#">Support</a></li>
 										<li><a href="#">Terms of Use</a></li>
 										<li><a href="#">Privacy Policy</a></li>
 									</ul>
-								</nav><!-- .xs-footer-menu .xs-block-menu END -->
-							</div><!-- .fundpress-single-footer END -->
-						</div>
+								</nav>
+							</div>
+						</div>-->
 					</div>
 				</div>
 			</div><!-- .xs-footer-wraper .fundpress-footer-top-layer END -->
 		</footer>
 <!-- Authentication/Login/SignUp -->
-		<script type="text/javascript" src="{{url_for('static', filename='js/Popper.js') }}"></script>
-		<script type="text/javascript" src="{{url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
-		<script type="text/javascript" src="{{url_for('static', filename='js/bootstrap.min.js') }}"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/js/bootstrap-formhelpers.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
-	{% assets "main_js" %}
-		<script type="text/javascript" src="{{ ASSET_URL }}"></script>
+	<script type='text/javascript' src="{{url_for('static', filename='js/comingsoon/jquery.min.js') }}"></script>
+		<script defer type="text/javascript" src="{{url_for('static', filename='js/Popper.js') }}"></script>
+		<script defer type="text/javascript" src="{{url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
+		<script defer type="text/javascript" src="{{url_for('static', filename='js/bootstrap.min.js') }}"></script>
+		<!--<script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/js/bootstrap-formhelpers.js"></script>-->
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+			<script >
+$(document).ready(function(){
+    $('form#subscribe-form').on('submit',function(event){
+    var a = $('form#subscribe-form').serializeArray();
+        $.ajax({
+        	contentType: "application/json",
+    		dataType: "json",
+            data: JSON.stringify(a),
+            type: "POST",
+            url: "/subscribe"
+        })
+        .done(function(data){
+        	alert(data.success)
+        	window.location.reload();
+        });
+        event.preventDefault();
+    });
+});
+</script>
+	<script >
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyloadImages;
+
+  if ("IntersectionObserver" in window) {
+    lazyloadImages = document.querySelectorAll(".lazy");
+    var imageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var image = entry.target;
+          image.src = image.dataset.src;
+          image.classList.remove("lazy");
+          imageObserver.unobserve(image);
+        }
+      });
+    });
+
+    lazyloadImages.forEach(function(image) {
+      imageObserver.observe(image);
+    });
+  } else {
+    var lazyloadThrottleTimeout;
+    lazyloadImages = document.querySelectorAll(".lazy");
+
+    function lazyload () {
+      if(lazyloadThrottleTimeout) {
+        clearTimeout(lazyloadThrottleTimeout);
+      }
+
+      lazyloadThrottleTimeout = setTimeout(function() {
+        var scrollTop = window.pageYOffset;
+        lazyloadImages.forEach(function(img) {
+            if(img.offsetTop < (window.innerHeight + scrollTop)) {
+              img.src = img.dataset.src;
+              img.classList.remove('lazy');
+            }
+        });
+        if(lazyloadImages.length == 0) {
+          document.removeEventListener("scroll", lazyload);
+          window.removeEventListener("resize", lazyload);
+          window.removeEventListener("orientationChange", lazyload);
+        }
+      }, 20);
+    }
+
+    document.addEventListener("scroll", lazyload);
+    window.addEventListener("resize", lazyload);
+    window.addEventListener("orientationChange", lazyload);
+  }
+})
+function isMobileDevice(){
+    return ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
+}
+//UPDATE GRAPH BUDGET NUMBER
+var mouseDown = false
+
+$("#mybudgetRange").mousedown(function() {
+   mouseDown = true;
+   updateSlider()
+});
+
+$("#mybudgetRange").mouseup(function() {
+    mouseDown = false;
+});
+
+function updateSlider() {
+    if(mouseDown) {
+        // Update the value while the mouse is held down.
+        $("#theBudgetRange").text($("#mybudgetRange").val()*100);
+
+        setTimeout(updateSlider, 50);
+        window.theRecalculate($("#mybudgetRange").val()*100);
+    }
+}
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+//Chartjs
+var calculateBond;
+var myChart;
+var bondsReturn;
+var array1 = [];
+var array2 = [];
+var array3 = [];
+var getData = $.get('/graph_data');
+getData.done(function(results){
+window.theRecalculate = function(theValue) {
+	array1 = [theValue];
+	array2 = [theValue];
+	array3 = [theValue];
+	array4 = [theValue];
+	for (i = 1; i<results.number[0].length; i++){
+		var CBond 	  = array1[i-1] + (array1[i-1] * 0.06) + theValue;
+		var CFdeposit = array2[i-1] + (array2[i-1] * 0.04) + theValue;
+		var CSavings  = array3[i-1] + (array3[i-1] * 0.01) + theValue;
+		var investedRM = array4[i-1]+theValue;
+		array1.push(Math.round(CBond));
+		array2.push(Math.round(CFdeposit));
+		array3.push(Math.round(CSavings));
+		array4.push(investedRM);
+	}
+	config.data.datasets[0].data = array1;
+	config.data.datasets[1].data = array2;
+	config.data.datasets[2].data = array3;
+	config.data.datasets[3].data = array4;
+	window.myLine.update();
+	//set max return
+	$("#amountGet").text(numberWithCommas(Math.round(array1[29])));
+}
+var cumBondReturn = results.number[0][29];
+var config = {
+			type: 'line',
+			data: {
+				labels: results.number[3],
+				datasets: [{
+					label: 'Corporate Bonds',
+					backgroundColor:'#fff',
+					borderColor: '#fff',
+					borderWidth: 2,
+					data: results.number[0],
+					fill: false,
+				}, {
+					label: 'Fixed Deposits',
+					fill: false,
+					backgroundColor: 'rgba(0,255,0,0.8)',
+					borderColor: 'rgba(0,255,0,0.8)',
+					borderWidth: 2,
+					pointRadius: 0,
+					data:  results.number[1],
+				}, {
+					label: 'Savings',
+					fill: false,
+					backgroundColor: 'rgba(0,0,255,0.4)',
+					borderColor: 'rgba(0,0,255,0.4)',
+					borderWidth: 3,
+					pointRadius: 0,
+					data:  results.number[2],
+				},  {
+					label: 'Cash Invested',
+					fill: false,
+					borderDash: [10, 5],
+					backgroundColor: 'rgba(0,0,0,0.6)',
+					borderColor: 'rgba(0,0,0,0.6)',
+					pointRadius: 0,
+					borderWidth: 1,
+					data:  results.number[4],
+				}]
+			},
+			options: {
+				responsive: true,
+				maintainAspectRatio: false,
+			    legend: {
+			    	display: !isMobileDevice() && (window.screen.width > 120),
+			        position: 'right',
+			        labels: {
+			        fontColor: "#fff"
+			        },
+			    },
+				title: {
+					display: false,
+					text: 'Chart.js Line Chart'
+				},
+				tooltips: {
+					mode: 'index',
+					intersect: false,
+					callbacks: {
+                	label: function(tooltipItems, data) {
+                    	return data.datasets[tooltipItems.datasetIndex].label +': ' +'RM '+ tooltipItems.yLabel.toFixed(0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") ;
+                		}
+            }
+				},
+				hover: {
+					mode: 'nearest',
+					intersect: true
+				},
+				scales: {
+					xAxes: [{
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: '30 YEARS',
+							fontColor: "#fff"
+						},ticks: {
+						    display:false,
+						    beginAtZero: true,
+                            fontColor: "#fff",
+                            //min: 0,
+                            stepSize: 1
+                        },gridLines: {
+                            display: false,
+                            color: "#D3D3D3"
+                        },
+					}],
+					yAxes: [{
+						display: false,
+						ticks: {
+						    beginAtZero: true,
+						    callback: function(value, index, values) {//needed to change the scientific notation results from using logarithmic scale
+                            return Number(value.toString());//pass tick values as a string into Number function
+                        },
+                        fontColor: "#000",
+                        },
+						scaleLabel: {
+							display: true,
+							labelString: 'Value',
+							fontColor: "#000"
+						},ticks: {
+						    beginAtZero: true,
+                            fontColor: "#000",
+                            min: 0
+                        },gridLines: {
+                            display: true,
+                            color: "#000"
+                        },
+					}],
+
+				}
+			}
+		};
+		window.onload = function() {
+			var ctx = document.getElementById('canvas').getContext('2d');
+			window.myLine = new Chart(ctx, config);
+		};
+});
+	</script>
+
+	{% assets "coming_soonJS" %}
+		<script type="text/javascript" src="{{ ASSET_URL }}" defer ></script>
 	{% endassets %}
 	<!--<script type='text/javascript' src='https://s3-ap-southeast-1.amazonaws.com/wasp-images/comingsoon/vendor.min.js'></script>-->
-
 	</body>
 </html>
